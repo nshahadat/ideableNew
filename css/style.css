@@ -3,7 +3,7 @@ color themes -
 #2b6777 - Dark Blue
 #c8d8e4 - Light Blue
 #ffffff - White
-#f2f2f2 - Light Red
+#f2f2f2 - Light Grey
 #52ab98 - Light Green
 */
 
@@ -20,3 +20,139 @@ font-family: 'Inter', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; 
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.small-navbar{
+    width: 100%;
+    height:20px;
+    background-color:#201c1c;
+    position: absolute;
+}
+
+.small-navbar ul{
+    width: auto;
+    float:right;
+}
+
+.small-navbar li{
+    display: inline-block;
+    padding:1px 25px;
+    
+}
+
+.small-navbar a{
+    text-align: center;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+}
+
+.small-navbar a:hover{
+    color: #52ab98;
+    padding:2px;
+    transition: 0.5s;
+    font-size: 1.1vw;
+}
+
+.small-navbar .left-ul{
+    float: left;
+}
+
+.main-navbar{
+    height:40px;
+    position: absolute;
+    top: 200px;
+    left:50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #201c1c;
+    border-radius: 1px;
+}
+
+.main-navbar ul{
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+}
+
+.main-navbar li{
+    display: flex;
+    padding:5px 30px;
+    
+}
+
+.main-navbar a{
+    text-align: center;
+    color: #52ab98;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+}
+
+.main-navbar ul li a button {
+    border: none;
+    outline: none;
+    color: #52ab98;
+    background-color: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+}
+.dropdown{
+    overflow: hidden;
+}
+
+.dropdown-content{
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width:fit-content;
+}
+
+.dropdown:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.dropdown-content a{
+    padding:5px;
+}
+
+.dropdown li a button:hover, .dropdown-content a:hover{
+    color: #201c1c;
+}
+
+#logo-section{
+    position: relative;
+    top:30px;
+    width:100vw;
+}
+
+.main-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:8%;
+}
+
+.main-banner{
+    position:relative;
+    top: 210px;
+}
+
+.main-banner-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
