@@ -25,5 +25,10 @@
         </div>
         <li><a href="#">Expertise</a></li>
         <li><a href="#">inventor</a></li>
-        <li><a href="#">Search</a></li>
+        <div style="display: flex;align-items:center;">
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search" name="Q">
+                <button type="submit" class="search-btn"><img src="/ideable/media/icons/search-png.png"></button>
+            </form>
+        </div>
 </nav>
