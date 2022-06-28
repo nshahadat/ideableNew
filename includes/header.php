@@ -12,4 +12,4 @@
     <link rel="icon" href="media/ideable_logo.png">
 </head>
 <body>
-    
+    <div class="container">

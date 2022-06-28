@@ -2,7 +2,7 @@
     <ul>
         <li><a href="#">How <strong>ideable</strong> works</a></li>
         <li><a href="#">Our collaboration partners</a></li>
-        <li><a href="#">Term and Policies</a></li>
+        <li><a href="#">Terms and Policies</a></li>
     </ul>
     <section id="left-ul">
         <li><a href="#" id="left-child">About <strong>ideable</strong> |</a></li>
