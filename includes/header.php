@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/05ce598124.js" crossorigin="anonymous"></script>
 
     <title>ideable</title>
-    <link rel="icon" href="media/ideable_logo.png">
+    <link rel="icon" href="/ideable/media/ideable_logo.png">
 </head>
 <body>
     <div class="container">
