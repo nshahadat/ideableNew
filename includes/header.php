@@ -12,4 +12,3 @@
     <link rel="icon" href="/ideable/media/ideable_logo.png">
 </head>
 <body>
-    <div class="container">

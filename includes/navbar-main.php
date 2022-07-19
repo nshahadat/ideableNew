@@ -1,6 +1,6 @@
 <nav class="main-navbar" style="top:3vh !important;">
     <ul>
-        <li><a href="#">investor</a></li>
+        <li><a href="/ideable/investor/investor-login.php">investor</a></li>
         <div class="dropdown">
             <li><a href="#"><button>Categories</button></a></li>
             <div class="dropdown-content">
@@ -10,7 +10,7 @@
                 <a href="#">Education</a>
             </div>
         </div>
-        <li><a href="#">Expertise</a></li>
+        <li><a href="/ideable/expertise.php">Expertise</a></li>
         <li><a href="#">inventor</a></li>
         <div style="display: flex;align-items:center;">
             <form action="#" class="search-bar">
