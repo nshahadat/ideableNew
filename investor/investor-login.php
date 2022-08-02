@@ -19,7 +19,7 @@ if (isset($_POST['investor_signin'])) {
   $numrows = mysqli_num_rows($result);
 
   if ($numrows == 0) {
-      echo "Wrong username or password";
+    echo "<script>alert('Wrong email or password')</script>";
   } else {
       session_start();
       $_SESSION['email'] = $u_signin_email;

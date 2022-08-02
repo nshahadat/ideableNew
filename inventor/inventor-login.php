@@ -20,7 +20,7 @@ $sql = "SELECT * FROM $inventor WHERE inventor_email = '$u_signin_email' AND inv
     $numrows = mysqli_num_rows($result);
 
     if ($numrows == 0) {
-        echo "Wrong username or password";
+        echo "<script>alert('Registration is completed. Now login to continue.')</script>";
     } else {
         session_start();
         $_SESSION['email'] = $u_signin_email;
@@ -44,7 +44,7 @@ $sql = "SELECT * FROM $inventor WHERE inventor_email = '$u_signin_email' AND inv
             <input type="password" placeholder="Password" name="u_signin_pass" value="<?php echo $_POST['u_signin_pass']; ?>" required />
         </div>
         <input type="submit" value="Login" name="inventor_signin" class="btn solid" />
-        <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forgot-password.php" style="color: #4590ef;">Forgot Password?</a></p>
+        <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forget-pass-inventor.php" style="color: #4590ef;">Forgot Password?</a></p>
         </form>
         <form action="" class="sign-up-form" method="post">
         <h2 class="title"> inventor Sign up</h2>
