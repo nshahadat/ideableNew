@@ -12,13 +12,13 @@ include ADMIN . '/includes/dbConfig.php';
             <h2 class="title">Insert the OTP</h2>
                 <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Email Address" name="inventor_reset_email" required />
+                <input type="text" placeholder="Email Address" name="investor_reset_email" required />
                 </div>
                 <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="OTP" name="inventor_reset_otp" required />
+                <input type="text" placeholder="OTP" name="investor_reset_otp" required />
                 </div>
-                <input type="submit" value="Login" name="inventor_reset_otp_btn" class="btn solid" />
+                <input type="submit" value="Login" name="investor_reset_otp_btn" class="btn solid" />
             </form>
         </div>
     </div>
@@ -27,17 +27,17 @@ include ADMIN . '/includes/dbConfig.php';
 
 <?php
 
-if(isset($_POST['inventor_reset_otp_btn'])){
-    $otp = $_POST['inventor_reset_otp'];
-    $email = $_POST['inventor_reset_email'];
+if(isset($_POST['investor_reset_otp_btn'])){
+    $otp = $_POST['investor_reset_otp'];
+    $email = $_POST['investor_reset_email'];
 
-    $query = "SELECT * FROM $inventor WHERE inventor_email = '$email'";
+    $query = "SELECT * FROM $investor WHERE investor_email = '$email'";
     $run = mysqli_query($mysqli, $query);
 
     if(mysqli_num_rows($run)>0){
-        header('Location:/ideable/inventor/reset-pass-inventor.php');
+        header('Location:/ideable/investor/reset-pass-investor.php');
         session_start();
-        $_SESSION['email'] = $_POST['inventor_reset_email'];
+        $_SESSION['email'] = $_POST['investor_reset_email'];
     }else{
         echo "<script>alert('The OTP or E-mail is not correct. Please check and enter again.')</script>";
     }

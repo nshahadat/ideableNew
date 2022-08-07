@@ -23,7 +23,6 @@ if (isset($_POST['investor_signin'])) {
   } else {
       session_start();
       $_SESSION['email'] = $u_signin_email;
-
       header("Location: investor-feed.php");
 
   }
@@ -35,7 +34,7 @@ if (isset($_POST['investor_signin'])) {
     <div class="forms-container">
       <div class="signin-signup">
         <form action="" method="post" class="sign-in-form">
-          <h2 class="title"> Investor Sign in</h2>
+          <h2 class="title"> investor Sign in</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Email Address" name="u_signin_email" value="<?php echo $_POST['u_signin_email']; ?>" required />
@@ -45,10 +44,10 @@ if (isset($_POST['investor_signin'])) {
             <input type="password" placeholder="Password" name="u_signin_pass" value="<?php echo $_POST['u_signin_pass']; ?>" required />
           </div>
           <input type="submit" value="Login" name="investor_signin" class="btn solid" />
-          <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forgot-password.php" style="color: #4590ef;">Forgot Password?</a></p>
+          <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a href="forget-pass-investor.php" style="color: #4590ef;">Forgot Password?</a></p>
         </form>
         <form action="" class="sign-up-form" method="post">
-          <h2 class="title"> Investor Sign up</h2>
+          <h2 class="title"> investor Sign up</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Full Name" name="u_signup_name" value="<?php echo $_POST["u_signup_name"]; ?>" required />
@@ -75,7 +74,7 @@ if (isset($_POST['investor_signin'])) {
         <div class="content">
           <h3>New here ?</h3>
           <p>
-          Register now and start experiencing your new journey with us!
+            Register now and start experiencing your new journey with us!
           </p>
           <button class="btn transparent" id="sign-up-btn">
             Sign up
@@ -117,7 +116,7 @@ if (isset($_POST['investor_signup'])) {
         header("Location: investor-login.php");
         echo "<script>alert('Registration is completed. Now login to continue.')</script>";
     } else {
-      echo "<script>alert('Password and Comfirm Password is not matched.')</script>";
+      echo "<script>alert('Password and Confirm Password is not matched.')</script>";
     }
 }
 ?>

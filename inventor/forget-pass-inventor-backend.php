@@ -28,7 +28,7 @@ try {
 
     //Recipients
     $mail->setFrom('ideabletest@gmail.com', 'ideable');
-    $mail->addAddress('shahadatnayeem23@gmail.com');     //Add a recipient
+    $mail->addAddress($_POST['inventor_reset_email']);     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
@@ -59,20 +59,17 @@ if(isset($_POST['inventor_pass_reset_btn'])){
 
         if($update_otp_run){
             send_pass_reset($get_name, $get_email, $otp);
-            echo "<script>alert('An e-mail has been sent to your email address. Get the otp to verify and reset your password.')</script>";
-            header('Location:/ideable/inventor/otp-inventor.php');
-            exit(0);
+            echo "<script>alert('An e-mail has been sent to your email address. Get the otp to verify and reset your password.');
+            window.location='/ideable/inventor/otp-inventor.php';</script>";
         }
         else{
-            echo "<script>alert('Something went wrong')</script>";
-            header('Location:/ideable/inevntor/forget-pass-inventor.php');
-            exit(0);
+            echo "<script>alert('Something went wrong');
+            window.location='/ideable/inventor/forget-pass-inventor.php';</script>";
         }
     }
     else{
-        echo "<script>alert('No user found of this email')</script>";
-        header('Location:/ideable/inevntor/forget-pass-inventor.php');
-        exit(0);
+        echo "<script>alert('No user found of this email');
+        window.location='/ideable/inventor/forget-pass-inventor.php';</script>";
     }
 }
 
