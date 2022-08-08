@@ -813,10 +813,10 @@ footer {
 	flex-basis: 15%;
 }
 .logo {
-	width: 110px;
+	width: 90px;
 	margin-bottom: 50px;
 	position: absolute;
-	bottom: 20%;
+	bottom: 28%;
 	left: 90%;
 }
 iframe {
