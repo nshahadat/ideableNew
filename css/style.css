@@ -250,10 +250,10 @@ font-family: 'Poppins', sans-serif;
 	width: 100vw;
 	top: 220px;
 }
-/* .banner-info p {
+.banner-info .banner-info-text {
 	font-family: "Playfair Display", serif;
 	font-size: 4vw;
-} */
+}
 
 .info {
 	display: flex;

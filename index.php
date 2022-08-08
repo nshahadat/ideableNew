@@ -7,7 +7,7 @@ include "includes/dbConfig.php";
             <p>An idea that is developed and put into action is more important than an idea that exists only as an idea</p>
         </div>
         <div class="banner-info">
-            <p>Why you should join ideable</p>
+            <p class="banner-info-text">Why you should join ideable</p>
             <div class="info">
                 <div class="info-part"><img src="/ideable/media/pngegg.png" height="300px" width="300px"></div>
                 <div class="info-part">
@@ -26,8 +26,8 @@ include "includes/dbConfig.php";
             <p style="font-family: 'Inter', sans-serif;font-size: 2vw;">Make your idea able to change the world</p>
         </div>
         <div class="info">
-            <div class="info-part" style="padding-top: 300px;">
-                <p>New to investment? Check this out</p>
+            <div class="info-part"  style="padding-top: 300px;">
+                <p class="banner-info-text">New to investment? Check this out</p>
                 <video width="500" controls controlslist="nodownload"><source src="media/investor.mp4" type="video/mp4"></video>
             </div>
         </div>
