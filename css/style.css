@@ -854,6 +854,6 @@ ul li a {
 }
 .copyright {
 	position: absolute;
-	bottom: -0.1%;
-	right: 40%;
+	bottom: 0.1%;
+	right: 30vw;
 }
