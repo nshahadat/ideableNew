@@ -18,9 +18,10 @@
         </div>
         <div class="footcol"><h3>Links <div class="underline"><span></span></h3>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Terms and Policies</a></li>
+            <li><a href="/ideable/index.php">Home</a></li>
+            <li><a href="/ideable/about-us.php">About Us</a></li>
+            <li><a href="/ideable/terms-conditions.php">Terms and Policies</a></li>
+            <li><a href="/ideable/expertise.php">Expertise</a></li>
         </ul>
         </div>
         <div class="footcol"><div class="social_icons">
