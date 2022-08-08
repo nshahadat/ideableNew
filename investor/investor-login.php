@@ -124,4 +124,4 @@ if (isset($_POST['investor_signup'])) {
 
 <?php
 include ADMIN . '/includes/footer.php';
-?>
+?> 
