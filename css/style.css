@@ -855,13 +855,13 @@ ul li a {
 .copyright {
 	position: absolute;
 	bottom: 0.1%;
-	right: 35vw;
+	right: 37vw;
 }
 /* investor and inventor feed  css */
 .logout-btn {
 	position: absolute;
-	right: 8%;
-	top: 1.5%;
+	top: 1vw;
+	right: 13vw;
 }
 .logout-btn button {
 	width: 80px;
@@ -887,8 +887,8 @@ ul li a {
 }
 .username-btn {
 	position: absolute;
-	right: 15%;
-	top: 1.5%;
+	right: 19vw;
+	top: 1vw;
 }
 .username-btn button {
 	width: 80px;
@@ -928,7 +928,7 @@ ul li a {
 
 .postlink-btn {
 	position: absolute;
-	right: 42vw;
+	right: 37vw;
 	top: 7vw;
 	font-size: large;
 }
