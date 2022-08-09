@@ -1,6 +1,6 @@
 /*
 color themes -
-#2b6777 - Dark Blue
+#2b6777 - Dark Green
 #c8d8e4 - Light Blue
 #ffffff - White
 #f2f2f2 - Light Grey
@@ -552,11 +552,11 @@ form.sign-in-form {
 
 .btn.transparent:hover {
 	background-color: white;
-	color: #4d84e2;
+	color: #2b6777;
 }
 
 .btn:hover {
-	background-color: #4d84e2;
+	background-color: #52ab98;
 }
 .panels-container {
 	position: absolute;
@@ -856,4 +856,102 @@ ul li a {
 	position: absolute;
 	bottom: 0.1%;
 	right: 35vw;
+}
+/* investor and inventor feed  css */
+.logout-btn {
+	position: absolute;
+	right: 15vw;
+	top: 1vw;
+}
+.logout-btn button {
+	width: 80px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 40px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.logout-btn .transparent:hover {
+	background-color: white;
+	color: #4d84e2;
+}
+.logout-btn :hover {
+	background-color: #52ab98;
+}
+.username-btn {
+	position: absolute;
+	right: 20vw;
+	top: 1vw;
+}
+.username-btn button {
+	width: 80px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 40px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.username-btn .transparent:hover {
+	background-color: white;
+	color: #4d84e2;
+}
+.username-btn :hover {
+	background-color: #52ab98;
+}
+.linecontainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	top: 6vw;
+	height: 0.1vw;
+	background-color: #2b6777;
+	color: #f2f2f2;
+	z-index: -1;
+}
+/* inventorfeedcss */
+
+.postlink-btn {
+	position: absolute;
+	right: 44vw;
+	top: 7vw;
+	font-size: large;
+}
+.postlink-btn button {
+	font-size: 15px;
+	width: 22vh;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 40px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.postlink-btn .transparent:hover {
+	background-color: white;
+	color: #4d84e2;
+}
+.postlink-btn :hover {
+	background-color: #52ab98;
 }

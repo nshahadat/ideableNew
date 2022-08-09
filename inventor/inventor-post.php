@@ -5,9 +5,6 @@ include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
 error_reporting(0);
 ?>
-<div class="username-btn"><button>username</button></div>
-<div class="logout-btn"><button>logout</button></div>
-<div class="linecontainer"></div>
 <?php
 include ADMIN . '/includes/footer.php';
 ?>
