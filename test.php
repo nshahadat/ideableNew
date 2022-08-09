@@ -8,6 +8,7 @@ error_reporting(0);
 <div class="username-btn"><button>username</button></div>
 <div class="logout-btn"><button>logout</button></div>
 <div class="linecontainer"></div>
+<div class="postlink-btn"><button>Whats On Your Mind</button></div>
 <?php
-include ADMIN . '/includes/footer.php';
+include "includes/footer.php";
 ?>
