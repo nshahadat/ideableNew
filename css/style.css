@@ -860,8 +860,8 @@ ul li a {
 /* investor and inventor feed  css */
 .logout-btn {
 	position: absolute;
-	right: 8vw;
-	top: 0.8vw;
+	right: 8%;
+	top: 1.5%;
 }
 .logout-btn button {
 	width: 80px;
@@ -869,7 +869,7 @@ ul li a {
 	border: none;
 	outline: none;
 	height: 40px;
-	border-radius: 50px;
+	border-radius: 0.3rem;
 	/* display: block; */
 	color: #fff;
 	font-weight: 600;
@@ -887,8 +887,8 @@ ul li a {
 }
 .username-btn {
 	position: absolute;
-	right: 15vw;
-	top: 0.8vw;
+	right: 15%;
+	top: 1.5%;
 }
 .username-btn button {
 	width: 80px;
@@ -896,7 +896,7 @@ ul li a {
 	border: none;
 	outline: none;
 	height: 40px;
-	border-radius: 50px;
+	border-radius: 0.3rem;
 	/* display: block; */
 	color: #fff;
 	font-weight: 600;
