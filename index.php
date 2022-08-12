@@ -12,13 +12,13 @@ include "includes/dbConfig.php";
                 <div class="info-part"><img src="/ideable/media/pngegg.png" height="300px" width="300px"></div>
                 <div class="info-part">
                     <h1 style="font-weight: 300;">inventor?</h1>
-                    <h3 style="font-weight: 200;">ideable provides you hassle-free process for getting investments. Though you need to remember that this is not crowdfunding or charity rising, you're going to a one-to-one business with every investor who is investing on you.</h3>
+                    <h3 style="font-weight: 200; text-align:justify; padding-right:5vw;">ideable provides you hassle-free process for getting investments. Though you need to remember that this is not crowdfunding or charity rising, you're going to a one-to-one business with every investor who is investing on you.</h3>
                 </div>
             </div>
         <div class="info">
             <div class="info-part">
                 <h1 style="font-weight: 300;">investor?</h1>
-                <h3 style="font-weight: 200;">ideable is the one place where you can directly contact with the person you're investing and even you can ask for an expert to do the job for you. Either way you are having a full knowledge of the project you are investing on.</h3>
+                <h3 style="font-weight: 200; text-align:justify; padding-left:5vw;">ideable is the one place where you can directly contact with the person you're investing and even you can ask for an expert to do the job for you. Either way you are having a full knowledge of the project you are investing on.</h3>
             </div>
             <div class="info-part"><img src="/ideable/media/investor-index.jpeg" height="300px" width="600px"alt=""></div>
         </div>

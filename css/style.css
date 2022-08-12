@@ -251,7 +251,7 @@ font-family: 'Poppins', sans-serif;
 	top: 220px;
 }
 .banner-info .banner-info-text {
-	font-family: "Playfair Display", serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 4vw;
 }
 
@@ -852,6 +852,11 @@ ul li a {
 	margin-right: 15px;
 	cursor: pointer;
 }
+.social_icons .fa-brands:hover{
+	background:#000;
+	color: #fff;
+	transition: 0.5s;
+}
 .copyright {
 	position: absolute;
 	bottom: 0.1%;
@@ -875,7 +880,7 @@ ul li a {
 	font-weight: 600;
 	margin: 10px 0;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 
 .logout-btn .transparent:hover {
@@ -902,7 +907,7 @@ ul li a {
 	font-weight: 600;
 	margin: 10px 0;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 
 .username-btn .transparent:hover {
@@ -911,6 +916,31 @@ ul li a {
 }
 .username-btn :hover {
 	background-color: #52ab98;
+}
+
+@media only screen and (min-width: 1200px) {
+	.username-btn {
+		position: absolute;
+		right: 15vw;
+		top: 0.8vw;
+	}
+	.logout-btn {
+		position: absolute;
+		top: 0.8vw;
+		right: 8vw;
+	}
+}
+@media only screen and (min-width: 1367px) {
+	.logout-btn {
+		position: absolute;
+		top: 1vw;
+		right: 13vw;
+	}
+	.username-btn {
+		position: absolute;
+		right: 19vw;
+		top: 1vw;
+	}
 }
 .linecontainer {
 	position: relative;
@@ -945,7 +975,7 @@ ul li a {
 	font-weight: 600;
 	margin: 10px 0;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 
 .postlink-btn .transparent:hover {
