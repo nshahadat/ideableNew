@@ -16,7 +16,7 @@
             </ul>
             <h4>+88001874455575</h4>
         </div>
-        <div class="footcol"><h3>Links <div class="underline"><span></span></h3>
+        <div class="footcol"><h3>Find <div class="underline"><span></span></h3>
         <ul>
             <li><a href="/ideable/index.php">Home</a></li>
             <li><a href="/ideable/about-us.php">About Us</a></li>
@@ -25,7 +25,7 @@
         </ul>
         </div>
         <div class="footcol"><div class="social_icons">
-            <h3>social links <div class="underline"><span></span></div></h3>
+            <h3>Social Links <div class="underline"><span></span></div></h3>
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands  fa-whatsapp"></i>

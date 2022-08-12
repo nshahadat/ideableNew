@@ -4,9 +4,17 @@ include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
 error_reporting(0);
+
+session_start();
+
+$user_email = $_SESSION['email'];
+$user_find_sql = "SELECT * FROM $investor WHERE investor_email = '$user_email'";
+$result  = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
+$data = mysqli_fetch_array($result);
+$username = $data['investor_name'];
 ?>
-<div class="username-btn"><button>username</button></div>
-<div class="logout-btn"><button>logout</button></div>
+<div class="username-btn"><button><?php echo $username; ?></button></div>
+<a href="investor-logout.php"><div class="logout-btn"><button>logout</button></div></a>
 <div class="linecontainer"></div>
 <?php
 include ADMIN . '/includes/footer.php';

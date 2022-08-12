@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="/ideable/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/ideable/css/responsive.css">
     <script src="https://kit.fontawesome.com/05ce598124.js" crossorigin="anonymous"></script>
 
     <title>ideable</title>
