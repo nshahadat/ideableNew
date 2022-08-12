@@ -251,7 +251,7 @@ font-family: 'Poppins', sans-serif;
 	top: 220px;
 }
 .banner-info .banner-info-text {
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 4vw;
 }
 
@@ -749,8 +749,8 @@ ul li a {
 	margin-right: 15px;
 	cursor: pointer;
 }
-.social_icons .fa-brands:hover{
-	background:#000;
+.social_icons .fa-brands:hover {
+	background: #000;
 	color: #fff;
 	transition: 0.5s;
 }
@@ -857,4 +857,31 @@ ul li a {
 }
 .postlink-btn :hover {
 	background-color: #52ab98;
+}
+/* inventor post css */
+.inventor-post-container {
+	margin-top: 10vh;
+	min-width: 100vh;
+	min-height: 100vh;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.post-left {
+	align-items: flex-start;
+}
+.post-right {
+	position: relative;
+	float: right;
+	overflow: hidden;
+}
+.inventor-header {
+	text-align: center;
+	font-size: larger;
+}
+.inventor-header2 {
+	font-size: larger;
+}
+.hidden {
+	display: none;
 }
