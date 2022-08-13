@@ -14,7 +14,7 @@ if (isset($_POST['inventor_signin'])) {
     $u_signin_email = $_POST['u_signin_email'];
     $u_signin_pass  = $_POST['u_signin_pass'];
 
-$sql = "SELECT * FROM $inventor WHERE inventor_email = '$u_signin_email' AND inventor_pass = '$u_signin_pass'";
+    $sql = "SELECT * FROM $inventor WHERE inventor_email = '$u_signin_email' AND inventor_pass = '$u_signin_pass'";
 
     $result  = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
     $numrows = mysqli_num_rows($result);
@@ -109,15 +109,28 @@ if (isset($_POST['inventor_signup'])) {
     $u_signup_cpassword = $_POST['u_signup_cpassword'];
     $u_signup_email     = $_POST['u_signup_email'];
 
-    if ($u_signup_password  == $u_signup_cpassword) {
+    $email_sql = "SELECT * FROM $inventor WHERE inventor_email = '$u_signup_email'";
 
-        $sql = "INSERT IGNORE INTO $inventor (inventor_name,inventor_pass,inventor_email) VALUES('$u_signup_name','$u_signup_password','$u_signup_email')";
-        $mysqli->query($sql) or die($mysqli->error);
-        header("Location: inventor-login.php");
-        echo "<script>alert('Registration is completed. Now login to continue.')</script>";
-    } else {
-    echo "<script>alert('Password and Comfirm Password is not matched.')</script>";
+    $result  = mysqli_query($mysqli, $email_sql) or die(mysqli_error($mysqli));
+    $numrows = mysqli_num_rows($result);
+
+    if($numrows==0){
+        if ($u_signup_password  == $u_signup_cpassword) {
+
+            $sql = "INSERT IGNORE INTO $inventor (inventor_name,inventor_pass,inventor_email) VALUES('$u_signup_name','$u_signup_password','$u_signup_email')";
+            $mysqli->query($sql) or die($mysqli->error);
+            header("Location: inventor-login.php");
+            echo "<script>alert('Registration is completed. Now login to continue.')</script>";
+        } else {
+        echo "<script>alert('Password and Confirm Password is not matched.')</script>";
+        }
     }
+    else{
+        echo "<script>alert('This email is already in use. Try a different one.');
+        window.location='/ideable/inventor/inventor-login.php';</script>";
+    }
+
+
 }
 ?>
 
