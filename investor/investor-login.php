@@ -104,20 +104,33 @@ if (isset($_POST['investor_signin'])) {
 
 if (isset($_POST['investor_signup'])) {
 
-    $u_signup_name  = $_POST['u_signup_name'];
-    $u_signup_password  = $_POST['u_signup_password'];
-    $u_signup_cpassword = $_POST['u_signup_cpassword'];
-    $u_signup_email     = $_POST['u_signup_email'];
+  $u_signup_name  = $_POST['u_signup_name'];
+  $u_signup_password  = $_POST['u_signup_password'];
+  $u_signup_cpassword = $_POST['u_signup_cpassword'];
+  $u_signup_email     = $_POST['u_signup_email'];
 
-    if ($u_signup_password  == $u_signup_cpassword) {
+  $email_sql = "SELECT * FROM $investor WHERE investor_email = '$u_signup_email'";
 
-        $sql = "INSERT IGNORE INTO $investor (investor_name,investor_pass,investor_email) VALUES('$u_signup_name','$u_signup_password','$u_signup_email')";
-        $mysqli->query($sql) or die($mysqli->error);
-        header("Location: investor-login.php");
-        echo "<script>alert('Registration is completed. Now login to continue.')</script>";
-    } else {
+  $result  = mysqli_query($mysqli, $email_sql) or die(mysqli_error($mysqli));
+  $numrows = mysqli_num_rows($result);
+
+  if($numrows==0){
+      if ($u_signup_password  == $u_signup_cpassword) {
+
+          $sql = "INSERT IGNORE INTO $investor (investor_name,investor_pass,investor_email) VALUES('$u_signup_name','$u_signup_password','$u_signup_email')";
+          $mysqli->query($sql) or die($mysqli->error);
+          header("Location: investor-login.php");
+          echo "<script>alert('Registration is completed. Now login to continue.')</script>";
+      } else {
       echo "<script>alert('Password and Confirm Password is not matched.')</script>";
-    }
+      }
+  }
+  else{
+      echo "<script>alert('This email is already in use. Try a different one.');
+      window.location='/ideable/investor/investor-login.php';</script>";
+  }
+
+
 }
 ?>
 
