@@ -4,8 +4,13 @@ include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
 error_reporting(0);
-
 session_start();
+
+// if(!isset($_SESSION['email'])){
+//     echo "<script>alert('You have to login first');
+//     window.location='/ideable/inventor/inventor-login.php';</script>";
+//     die();
+// }
 
 $user_email = $_SESSION['email'];
 $user_find_sql = "SELECT * FROM $investor WHERE investor_email = '$user_email'";

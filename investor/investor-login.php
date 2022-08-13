@@ -11,7 +11,7 @@ error_reporting(0);
 
 if (isset($_POST['investor_signin'])) {
   $u_signin_email = mysqli_real_escape_string($mysqli, $_POST['u_signin_email']);
-  $u_signin_pass  = mysqli_real_escape_string($mysqli, $_POST['u_signin_pass']);
+  $u_signin_pass  = md5(mysqli_real_escape_string($mysqli, $_POST['u_signin_pass']));
 
   $sql = "SELECT * FROM $investor WHERE investor_email = '$u_signin_email' AND investor_pass = '$u_signin_pass'";
 
@@ -105,8 +105,8 @@ if (isset($_POST['investor_signin'])) {
 if (isset($_POST['investor_signup'])) {
 
   $u_signup_name  = mysqli_real_escape_string($mysqli, $_POST['u_signup_name']);
-  $u_signup_password  = mysqli_real_escape_string($mysqli, $_POST['u_signup_password']);
-  $u_signup_cpassword = mysqli_real_escape_string($mysqli, $_POST['u_signup_cpassword']);
+  $u_signup_password  = md5(mysqli_real_escape_string($mysqli, $_POST['u_signup_password']));
+  $u_signup_cpassword = md5(mysqli_real_escape_string($mysqli, $_POST['u_signup_cpassword']));
   $u_signup_email     = mysqli_real_escape_string($mysqli, $_POST['u_signup_email']);
 
   $email_sql = "SELECT * FROM $investor WHERE investor_email = '$u_signup_email'";

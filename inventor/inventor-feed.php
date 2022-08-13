@@ -6,6 +6,12 @@ include ADMIN . '/includes/dbConfig.php';
 error_reporting(0);
 session_start();
 
+// if(!isset($_SESSION['email'])){
+//     echo "<script>alert('You have to login first');
+//     window.location='/ideable/inventor/inventor-login.php';</script>";
+//     die();
+// }
+
 $user_email = $_SESSION['email'];
 $user_find_sql = "SELECT * FROM $inventor WHERE inventor_email = '$user_email'";
 $result  = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
