@@ -5,3 +5,4 @@ $investor = 'investor';
 $post = 'post';
 $review = 'review';
 $investment = 'investment';
+$admin = 'admin';
