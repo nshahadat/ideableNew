@@ -3,6 +3,9 @@ include "includes/header.php";
 include "includes/navbar.php";
 include "includes/dbConfig.php";
 ?>
+        <div class="introduction">
+            <video id="indexVid" width="500" controls><source src="media/index-introduction.mp4" type="video/mp4"></video>
+        </div>
         <div class="banner-text-1">
             <p>An idea that is developed and put into action is more important than an idea that exists only as an idea</p>
         </div>

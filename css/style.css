@@ -224,6 +224,12 @@ font-family: 'Poppins', sans-serif;
 }
 
 /* main section */
+.introduction {
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 30vh;
+}
 .banner-text-1 {
 	position: relative;
 	display: flex;
@@ -684,7 +690,7 @@ footer {
 	max-height: 400px;
 	overflow: hidden;
 	position: absolute;
-	bottom: -17%;
+	bottom: -25%;
 	background-color: #c8d8e4;
 	color: #2b6777;
 	padding: 100px 0 30px;
@@ -857,31 +863,4 @@ ul li a {
 }
 .postlink-btn :hover {
 	background-color: #52ab98;
-}
-/* inventor post css */
-.inventor-post-container {
-	margin-top: 10vh;
-	min-width: 100vh;
-	min-height: 100vh;
-	font-family: "Poppins", sans-serif;
-	display: flex;
-	justify-content: center;
-}
-.post-left {
-	align-items: flex-start;
-}
-.post-right {
-	position: relative;
-	float: right;
-	overflow: hidden;
-}
-.inventor-header {
-	text-align: center;
-	font-size: larger;
-}
-.inventor-header2 {
-	font-size: larger;
-}
-.hidden {
-	display: none;
 }
