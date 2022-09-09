@@ -1,0 +1,158 @@
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    /* width: 100%; */
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+  #nextBtn {
+	width:100px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 35px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 13px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#nextBtn.transparent:hover {
+	background-color: white;
+	color: #2b6777;
+}
+
+#nextBtn:hover {
+	background-color: #52ab98;
+}
+#prevBtn {
+	width:100px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 35px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#prevBtn.transparent:hover {
+	background-color: white;
+	color: #2b6777;
+}
+
+#prevBtn:hover {
+	background-color: #52ab98;
+}
+::selection{
+  color: #fff;
+  background: #4671EA;
+}
+.wrapper{
+  width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 0px 25px 30px;
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.06);
+}
+.wrapper h2{
+  color: #2b6777;
+  font-size: 28px;
+  text-align: center;
+}
+.wrapper textarea{
+  width: 100%;
+  resize: none;
+  height: 59px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 330px;
+  caret-color: #2b6777;
+  border: 1px solid #bfbfbf;
+}
+textarea::placeholder{
+  color: #b3b3b3;
+}
+textarea:is(:focus, :valid){
+  padding: 14px;
+  border: 2px solid #2b6777;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.post-text{
+    width: 100%;
+    resize: none;
+    height: 59px;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    max-height: 330px;
+    caret-color: #2b6777;
+    border: 1px solid #bfbfbf;
+  }
+  .post-text::placeholder{
+    color: #b3b3b3;
+  }
+ .post-text:is(:focus, :valid){
+    padding: 14px;
+    border: 2px solid #2b6777;
+  }
+  .post-text::-webkit-scrollbar{
+    width: 0px;
+  }
