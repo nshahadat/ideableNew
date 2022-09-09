@@ -1124,45 +1124,6 @@ left: 47.34%;
 .text-area{
 	width:140px ;
 }
-/* .input-field-post2 {
-	max-width: 170px;
-	width: 100%;
-	background-color: #f0f0f0;
-	height:80px;
-	border-radius: 0.3rem;
-	display: grid;
-	grid-template-columns: 15% 85%;
-	padding: 0 0.4rem;
-	position: relative;
-}
-
-.input-field-post2 input {
-	background: none;
-	outline: none;
-	border: none;
-	line-height: 1;
-	font-weight: 600;
-	font-size: 1rem;
-	color: #333;
-	max-width: 170px;
-}
-
-.input-field-post2 input::placeholder {
-	color: #aaa;
-	font-weight: 500;
-}
-.text-area1{
-	width:160px ;
-} */
-.text-area{
-	width:140px ;
-}
- /* #left-hand{
-	padding-right: 290px!important;
-	margin-left: 0px !important;
-	
-	
-} */
 .input-post{
 	text-align: center;
 	color: #2b6777;
