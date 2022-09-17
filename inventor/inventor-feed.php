@@ -21,7 +21,7 @@ $username = $data['inventor_name'];
 <div class="username-btn"><button><?php echo $username; ?></button></div>
 <a href="inventor-logout.php"><div class="logout-btn"><button>logout</button></div></a>
 <div class="linecontainer"></div>
-<div class="postlink-btn"><button>Whats On Your Mind</button></div>
+<a href="/ideable/inventor/inventor-post.php"><div class="postlink-btn"><button>Whats On Your Mind</button></div></a>
 <?php
 include ADMIN . '/includes/footer.php';
 ?>

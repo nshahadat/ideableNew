@@ -16,6 +16,8 @@ $user_find_sql = "SELECT * FROM $inventor WHERE inventor_email = '$user_email'";
 $result  = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
 $data = mysqli_fetch_array($result);
 $username = $data['inventor_name'];
+$userid = $data['inventor_id'];
+$useremail = $data['inventor_email'];
 ?>
 
 <div class="username-btn"><button><?php echo $username; ?></button></div>
@@ -43,7 +45,7 @@ $username = $data['inventor_name'];
                 <div class="wrapper">
                 <div class="input-post"> Choose a Catagory: </div>  
                 <label  class="catagory" for="cars"></label>
-                <select name="Set the category" class="select-button3">
+                <select name="category" class="select-button3">
                     <option value="Technology">Technology</option>
                     <option value="Farming">Farming</option>
                     <option value="Media">Media</option>
@@ -53,7 +55,7 @@ $username = $data['inventor_name'];
                 <div class="wrapper">
                 <div class="input-post"> Type of investment you need   </div>  
                 <div class="input-post-small">  (Financial, resources, marketing etc)</div>
-                <textarea spellcheck="false"name="investment-needed" placeholder="Type something here..." required></textarea>
+                <textarea spellcheck="false"name="toi" placeholder="Type something here..." required></textarea>
                 <script>
                 const textarea = document.querySelector("textarea");
                 textarea.addEventListener("keyup", e =>{
@@ -66,7 +68,7 @@ $username = $data['inventor_name'];
                 <div class="wrapper">
                 <div class="input-post"> Area of investment   </div>  
                 <div class="input-post-small">  (In which area youre going to apply the investment and how)</div>
-                <textarea spellcheck="false"name="investment-needed" placeholder="Type something here..." required></textarea>
+                <textarea spellcheck="false"name="aoi" placeholder="Type something here..." required></textarea>
                 <script>
                 const textarea = document.querySelector("textarea");
                 textarea.addEventListener("keyup", e =>{
@@ -86,7 +88,7 @@ $username = $data['inventor_name'];
                 </div>
                 <div class="wrapper">
                 <div class="input-post"> Do you have your idea theoretically proven </div> 
-                <label  class="catagory" for="cars"> <select name="theoretically" class="select-button4">
+                <label  class="catagory" for="cars"> <select name="theoretical" class="select-button4">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>  </label>
@@ -94,14 +96,14 @@ $username = $data['inventor_name'];
                 <div class="wrapper">
                 <div class="input-post">Do you have your idea practically proven </div> 
                 <label  class="catagory" for="cars">    </label>
-                <select name="practically" class="select-button4">
+                <select name="practical" class="select-button4">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
                 </div>
                 <div class="wrapper">
                 <div class="input-post">Is there any related projects to your idea currently available </div> 
-                <label  class="catagory" for="cars"><select name="Realated Projects" class="select-button5">
+                <label  class="catagory" for="cars"><select name="Related_Projects" class="select-button5">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select> </label>
@@ -110,33 +112,80 @@ $username = $data['inventor_name'];
                 </div>
                 <div class="wrapper">
                 <div class="input-post"> Approximate time limit to complete your project   </div>  
-                <input type="text"class="post-text" spellcheck="false" placeholder="Type something here..."name="title" required>
+                <input type="text"class="post-text" spellcheck="false" placeholder="Type something here..."name="apprx_time" required>
                 </div>
                 </div>
     </section>
     <section class="post-right">
-    <form action="" method="post" class="post-form" id="right-hand">
+    <form action="" method="post" class="post-form" id="right-hand" enctype="multipart/form-data">
         <h5 class="inventor-header2">Media Files</h5>
         <div class="input-post2">  Thumbnail Picture   </div> 
         <input type="file" class="hidden" id="file" name="thumbnail"  />
         <label for="file"class="select-button2">Select Pictures</label>
         <div class="input-post"> Upload media files related to your project   </div>
         <div class="input-post-small2">  (Video proof, Demo, Your speech etc ) </div>
-        <input type="file" class="hidden" id="file" name="Realated Video"  /> 
+        <input type="file" class="hidden" id="file" name="rVideo"  /> 
         <label for="file"class="select-button7">Select Media Files</label>
         <div class="input-post"> Upload document files related to your project    </div>
         <div class="input-post-small2">  (Theoretical prove, drawings etc)</div>
-        <input type="file" class="hidden" id="file" name="Realated Files" />
+        <input type="file" class="hidden" id="file" name="rFiles" />
         <label for="file"class="select-button8">Select Documents</label>
         <div class="input-post"> Speech/Proposal    </div>
         <div class="input-post-small2">  (Create a short video on why an investor should invest on you) </div>
-        <input type="file" class="hidden" id="file" name="Speech Video" />
+        <input type="file" class="hidden" id="file" name="speech" />
         <label for="file"class="select-button6">Select Media Files</label>
-        </form>
     </section>
     </div>
+    <button name="upload-btn" class="up-btn">Upload</button>
+    </form>
 
-    <button class="up-btn">Upload</button>
+<?php
+
+if(isset($_POST['upload-btn'])){
+    $title = $_POST['title'];
+    $des = $_POST['description'];
+    $cat = $_POST['category'];
+    $toi = $_POST['toi'];
+    $aoi = $_POST['aoi'];
+    $demo = $_POST['demo'];
+    $theoretical = $_POST['theoretical'];
+    $practical = $_POST['practical'];
+    $rp = $_POST['Related_Projects'];
+    $apprx_time = $_POST['apprx_time'];
+    $thumb_files_name = $_FILES['thumbnail']['name'];
+    $thumb_files_name_tmp = $_FILES['thumbnail']['tmp_name'];
+    $thumb_files_dir = '/ideable/inventor/dbFiles/thumbFiles/' . $thumb_files_name;
+    $video_files_name = $_FILES['rVideo']['name'];
+    $video_files_name_tmp = $_FILES['rVideo']['tmp_name'];
+    $video_files_dir = '/ideable/inventor/dbFiles/mediaFiles/' . $video_files_name;
+    $doc_files_name = $_FILES['rFiles']['name'];
+    $doc_files_name_tmp = $_FILES['rFiles']['tmp_name'];
+    $doc_files_dir = '/ideable/inventor/dbFiles/docFiles/' . $doc_files_name;
+    $speech_files_name = $_FILES['speech']['name'];
+    $speech_files_name_tmp = $_FILES['speech']['tmp_name'];
+    $speech_files_dir = '/ideable/inventor/dbFiles/speechFiles/' . $speech_files_name;
+
+    move_uploaded_file($thumb_files_name_tmp, "/ideable/inventor/dbFiles/thumbFiles/" . $thumb_files_name);
+    move_uploaded_file($video_files_name_tmp, "/ideable/inventor/dbFiles/mediaFiles/" . $video_files_name);
+    move_uploaded_file($doc_files_name_tmp, "/ideable/inventor/dbFiles/docFiles/" . $doc_files_name);
+    move_uploaded_file($speech_files_name_tmp, "/ideable/inventor/dbFiles/speechFiles/" . $speech_files_name);
+
+    if(!empty($_FILES['thumbnail']['name'])){
+        $upload_sql = "INSERT IGNORE INTO $post (inventor_id, inventor_name, inventor_email, title, description, category, doc_files_dir, media_files_dir, thumb_files_dir, speech_files_dir, type_of_investment, area_of_investment, theoratically_proven, practically_proven, demo, related_projects, approximate_time) VALUES ('$userid', '$username', '$useremail', '$title', '$des', '$cat', '$doc_files_dir', '$video_files_dir', '$thumb_files_dir', '$speech_files_dir', '$toi', '$aoi', '$theoretical', '$practical', '$demo', '$rp', '$apprx_time')";
+
+        $mysqli->query($upload_sql) or die($mysqli->error);
+        echo "<script>alert('Post uploaded successfully!');</script>";
+        echo "<script>alert('$thumb_files_name');</script>";
+    }
+    else{
+        echo "<script>alert('Something went wrong!');</script>";
+    }
+}
+else{
+    echo "<script>alert('Something went wrong at first');</script>";
+}
+
+?>
 <?php
 include ADMIN . '/includes/footer2.php';
 ?> 

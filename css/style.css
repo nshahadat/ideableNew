@@ -1180,7 +1180,7 @@ top:55%;
 	padding: 4px;
 	position: absolute;
 	left:64.5%;
-top:69%;
+	top:69%;
 }
 .select-button7{
 	width: 170px;
@@ -1250,6 +1250,7 @@ top:39%;
 	text-align: center;
 	color: #2b6777;
 	font-weight: 600;
+	/* font-size:xx-small; */
 	
 }
 .input-post2{
@@ -1265,13 +1266,13 @@ top:39%;
 	border-radius: 5px;
 	padding: 0px 25px 30px;
 	/* box-shadow: 8px 8px 10px rgba(0,0,0,0.06); */
-  }
-  .wrapper h2{
+}
+.wrapper h2{
 	color: #2b6777;
 	font-size: 28px;
 	text-align: center;
-  }
-  .wrapper textarea{
+}
+.wrapper textarea{
 	width: 100%;
 	resize: none;
 	height: 59px;
@@ -1283,39 +1284,39 @@ top:39%;
 	max-height: 330px;
 	caret-color: #2b6777;
 	border: 1px solid #bfbfbf;
-  }
-  textarea::placeholder{
+}
+textarea::placeholder{
 	color: #b3b3b3;
-  }
-  textarea:is(:focus, :valid){
+}
+textarea:is(:focus, :valid){
 	padding: 14px;
 	border: 2px solid #2b6777;
-  }
-  textarea::-webkit-scrollbar{
+}
+textarea::-webkit-scrollbar{
 	width: 0px;
-  }
-  .post-text{
-	  width: 100%;
-	  resize: none;
-	  height: 59px;
-	  outline: none;
-	  padding: 15px;
-	  font-size: 16px;
-	  margin-top: 20px;
-	  border-radius: 5px;
-	  max-height: 330px;
-	  caret-color: #2b6777;
-	  border: 1px solid #bfbfbf;
+}
+.post-text{
+	width: 100%;
+	resize: none;
+	height: 59px;
+	outline: none;
+	padding: 15px;
+	font-size: 16px;
+	margin-top: 20px;
+	border-radius: 5px;
+	max-height: 330px;
+	caret-color: #2b6777;
+	border: 1px solid #bfbfbf;
 	}
-	.post-text::placeholder{
-	  color: #b3b3b3;
+.post-text::placeholder{
+	color: #b3b3b3;
 	}
-   .post-text:is(:focus, :valid){
-	  padding: 14px;
-	  border: 2px solid #2b6777;
+.post-text:is(:focus, :valid){
+	padding: 14px;
+	border: 2px solid #2b6777;
 	}
 	.post-text::-webkit-scrollbar{
-	  width: 0px;
+	width: 0px;
 	}
 	input {
 		padding: 10px;
@@ -1323,10 +1324,10 @@ top:39%;
 		font-size: 17px;
 		font-family: Raleway;
 		border: 1px solid #aaaaaa;
-	  }
-	  
+	}
+	
 	  /* Mark input boxes that gets an error on validation: */
-	  input.invalid {
+	input.invalid {
 		background-color: #ffdddd;
-	  }
+	}
 	  /* inventor-post css end */
