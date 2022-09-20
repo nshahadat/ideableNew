@@ -282,6 +282,20 @@
 		font-size: larger;
 		padding-top: 47px;
 	}
+	footer {
+		width: 5000px;
+		max-height: 400px;
+		overflow: hidden;
+		position: absolute;
+		bottom: -50%;
+		background-color: #c8d8e4;
+		color: #2b6777;
+		padding: 100px 0 30px;
+		border-top-left-radius: 125px;
+		font-size: 12px;
+		line-height: 20px;
+		font-family: "Poppins", sans-serif;
+	}
 }
 @media only screen and (min-width: 1367px) {
 	.logout-btn {
