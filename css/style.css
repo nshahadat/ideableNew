@@ -279,11 +279,11 @@ font-family: 'Poppins', sans-serif;
 	text-align: center;
 }
 
-.card {
+.card1 {
 	display: grid;
-	grid-template-columns: 18vw;
-	grid-template-rows: 210px 210px 80px;
-	grid-template-areas: "image" "text" "stats";
+	grid-template-columns: 20.5vw;
+	grid-template-rows: 250px 250px ;
+	grid-template-areas: "image" "text" ;
 
 	border-radius: 18px;
 	background: white;
@@ -771,7 +771,7 @@ ul li a {
 	max-height: 400px;
 	overflow: hidden;
 	position: absolute;
-	bottom: -80%;
+	bottom: -190%;
 	background-color: #c8d8e4;
 	color: #2b6777;
 	padding: 100px 0 30px;
@@ -1393,4 +1393,128 @@ textarea::-webkit-scrollbar{
 	padding: 5px;
 	border-radius: 50%;
   }
-  
+  /* expertise css  */
+  .card {
+	display: grid;
+	grid-template-columns: 18vw;
+	grid-template-rows: 210px 210px 80px;
+	grid-template-areas: "image" "text" "stats";
+
+	border-radius: 18px;
+	background: white;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+
+	transition: 0.5s ease;
+	cursor: pointer;
+	margin: 30px;
+}
+
+/* card 1 */
+.card1-image {
+	grid-area: image;
+	background: url("/ideable/media/img1.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.card1-text {
+	grid-area: text;
+	margin: 25px;
+}
+.card1-text .date {
+	color: rgb(255, 7, 110);
+	font-size: 13px;
+}
+.card1-text p {
+	color: grey;
+	font-size: 15px;
+	font-weight: 300;
+	font-family: "Inter", sans-serif;
+}
+.card1-text h2 {
+	margin-top: 0px;
+	font-size: 28px;
+}
+.card1-stats {
+	grid-area: stats;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background: rgb(255, 7, 110);
+}
+.card1-stats .stat {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+.card1-stats .border {
+	border-left: 1px solid rgb(172, 26, 87);
+	border-right: 1px solid rgb(172, 26, 87);
+}
+.card1-stats .value {
+	font-size: 22px;
+	font-weight: 500;
+}
+.card1-stats .value sup {
+	font-size: 12px;
+}
+.card1-stats .type {
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.card1:hover {
+	transform: scale(1.15);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/*card1 2*/
+.card1-image.card12 {
+	background: url("/ideable/media/img2.jpg");
+	background-size: cover;
+}
+.card1-text.card12 .date {
+	color: rgb(255, 77, 7);
+}
+.card1-stats.card12 .border {
+	border-left: 1px solid rgb(185, 67, 20);
+	border-right: 1px solid rgb(185, 67, 20);
+}
+.card1-stats.card12 {
+	background: rgb(255, 77, 7);
+}
+/*card1 3*/
+.card1-image.card13 {
+	background: url("/ideable/media/img3.jpg");
+	background-size: cover;
+}
+.card1-text.card13 .date {
+	color: rgb(0, 189, 63);
+}
+.card1-stats.card13 .border {
+	border-left: 1px solid rgb(14, 122, 50);
+	border-right: 1px solid rgb(14, 122, 50);
+}
+.card1-stats.card13 {
+	background: rgb(0, 189, 63);
+}
+.gallery1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	/* min-height: 100vh; */
+	/* max-height: 50vh; */
+	grid-gap: 2rem;
+	padding-top: 70px;
+}
+.ex-header{
+	text-align: center;
+	padding-top: 96px;
+}
