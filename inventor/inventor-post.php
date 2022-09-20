@@ -28,6 +28,7 @@ $useremail = $data['inventor_email'];
             <h5 class="inventor-header">Informations</h5>
             <div class="wrapper">
             <div class="input-post"> Title of your Idea  </div>  
+            
                 <input type="text"class="post-text" spellcheck="false" placeholder="Type something here..."name="title" required>
             </div>
                 <div class="wrapper">
@@ -40,6 +41,7 @@ $useremail = $data['inventor_email'];
         textarea.style.height = "63px";
         let scHeight = e.target.scrollHeight;
         textarea.style.height = `${scHeight}px`;
+        
       });
     </script>
                 <div class="wrapper">
@@ -127,6 +129,15 @@ $useremail = $data['inventor_email'];
     <form action="" method="post" class="post-form" id="right-hand" enctype="multipart/form-data">
         <h5 class="inventor-header2">Media Files</h5>
         <div class="input-post2">  Thumbnail Picture   </div> 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input[type="file"]').change(function(e){
+                    var fileName = e.target.files[0].name;
+                    alert('The file "' + fileName +  '" has been selected.');
+                });
+            });
+        </script>
         <input type="file" class="hidden" id="file" name="thumbnail"  />
         <label for="file"class="select-button2">Select Pictures</label>
         <div class="input-post"> Upload media files related to your project   </div>
