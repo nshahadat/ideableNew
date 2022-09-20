@@ -87,6 +87,13 @@ $useremail = $data['inventor_email'];
                 </select>
                 </div>
                 <div class="wrapper">
+                <div class="input-post"> Do you have any patent of your idea </div>  
+                <select name="demo" class="select-button4">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </div>
+                <div class="wrapper">
                 <div class="input-post"> Do you have your idea theoretically proven </div> 
                 <label  class="catagory" for="cars"> <select name="theoretical" class="select-button4">
                     <option value="Yes">Yes</option>
