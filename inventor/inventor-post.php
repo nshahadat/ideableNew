@@ -24,7 +24,7 @@ $useremail = $data['inventor_email'];
 <a href="inventor-logout.php"><div class="logout-btn"><button>logout</button></div></a>
 <div class="inventor-post-container">
      <section class="post-left">
-            <form action="" method="post" class="post-form"id="left-hand">
+            <form action="" method="post" class="post-form"id="left-hand" enctype="multipart/form-data">
             <h5 class="inventor-header">Informations</h5>
             <div class="wrapper">
             <div class="input-post"> Title of your Idea  </div>  
@@ -138,24 +138,30 @@ $useremail = $data['inventor_email'];
                 });
             });
         </script>
-        <input type="file" class="hidden" id="file" name="thumbnail"  />
-        <label for="file"class="select-button2">Select Pictures</label>
+        <input type="file" class="hidden" id="file-thumbnail" name="thumbnail" accept="image/*"  />
+        <label for="file-thumbnail"class="select-button2">Select Pictures</label>
         <div class="input-post"> Upload media files related to your project   </div>
         <div class="input-post-small2">  (Video proof, Demo, Your speech etc ) </div>
-        <input type="file" class="hidden" id="file" name="rVideo"  /> 
-        <label for="file"class="select-button7">Select Media Files</label>
+        <input type="file" class="hidden" id="file-rVideo" name="rVideo" accept="video/*" /> 
+        <label for="file-rVideo"class="select-button7">Select Media Files</label>
         <div class="input-post"> Upload document files related to your project    </div>
         <div class="input-post-small2">  (Theoretical prove, drawings etc)</div>
-        <input type="file" class="hidden" id="file" name="rFiles" />
-        <label for="file"class="select-button8">Select Documents</label>
+        <input type="file" class="hidden" id="file-rFiles" name="rFiles" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
+        <label for="file-rFiles"class="select-button8">Select Documents</label>
         <div class="input-post"> Speech/Proposal    </div>
         <div class="input-post-small2">  (Create a short video on why an investor should invest on you) </div>
-        <input type="file" class="hidden" id="file" name="speech" />
-        <label for="file"class="select-button6">Select Media Files</label>
+        <input type="file" class="hidden" id="file-speech" name="speech" accept="video/*" />
+        <label for="file-speech"class="select-button6">Select Media Files</label>
     </section>
     </div>
     <button name="upload-btn" class="up-btn">Upload</button>
     </form>
+
+<script>
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+}
+</script>
 
 <?php
 
@@ -182,11 +188,15 @@ if(isset($_POST['upload-btn'])){
     $speech_files_name = $_FILES['speech']['name'];
     $speech_files_name_tmp = $_FILES['speech']['tmp_name'];
     $speech_files_dir = '/ideable/inventor/dbFiles/speechFiles/' . $speech_files_name;
+    $pathThumb = "dbFiles/thumbFiles/".$thumb_files_name;
+    $pathVideo = "dbFiles/mediaFiles/".$video_files_name;
+    $pathDoc = "dbFiles/docFiles/".$doc_files_name;
+    $pathSpeech = "dbFiles/speechFiles/".$speech_files_name;
 
-    move_uploaded_file($thumb_files_name_tmp, "/ideable/inventor/dbFiles/thumbFiles/" . $thumb_files_name);
-    move_uploaded_file($video_files_name_tmp, "/ideable/inventor/dbFiles/mediaFiles/" . $video_files_name);
-    move_uploaded_file($doc_files_name_tmp, "/ideable/inventor/dbFiles/docFiles/" . $doc_files_name);
-    move_uploaded_file($speech_files_name_tmp, "/ideable/inventor/dbFiles/speechFiles/" . $speech_files_name);
+    move_uploaded_file($thumb_files_name_tmp, $pathThumb);
+    move_uploaded_file($video_files_name_tmp, $pathVideo);
+    move_uploaded_file($doc_files_name_tmp, $pathDoc);
+    move_uploaded_file($speech_files_name_tmp, $pathSpeech);
 
     if(!empty($_FILES['thumbnail']['name'])){
         $upload_sql = "INSERT IGNORE INTO $post (inventor_id, inventor_name, inventor_email, title, description, category, doc_files_dir, media_files_dir, thumb_files_dir, speech_files_dir, type_of_investment, area_of_investment, theoratically_proven, practically_proven, demo, related_projects, approximate_time) VALUES ('$userid', '$username', '$useremail', '$title', '$des', '$cat', '$doc_files_dir', '$video_files_dir', '$thumb_files_dir', '$speech_files_dir', '$toi', '$aoi', '$theoretical', '$practical', '$demo', '$rp', '$apprx_time')";
@@ -194,6 +204,9 @@ if(isset($_POST['upload-btn'])){
         $mysqli->query($upload_sql) or die($mysqli->error);
         echo "<script>alert('Post uploaded successfully!');</script>";
         echo "<script>alert('$thumb_files_name');</script>";
+        echo "<script>alert('$doc_files_name');</script>";
+        echo "<script>alert('$video_files_name');</script>";
+        echo "<script>alert('$speech_files_name');</script>";
     }
     else{
         echo "<script>alert('Something went wrong!');</script>";

@@ -296,6 +296,21 @@
 		line-height: 20px;
 		font-family: "Poppins", sans-serif;
 	}
+	.card1 {
+		display: grid;
+		grid-template-columns: 20.5vw;
+		grid-template-rows: 250px 250px ;
+		grid-template-areas: "image" "text" ;
+	
+		border-radius: 18px;
+		background: white;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+		text-align: center;
+		font-family: "Poppins", sans-serif;
+		transition: 0.5s ease;
+		cursor: pointer;
+		margin: 18px;
+	}
 }
 @media only screen and (min-width: 1367px) {
 	.logout-btn {
