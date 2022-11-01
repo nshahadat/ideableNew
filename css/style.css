@@ -690,6 +690,7 @@ footer {
 	max-height: 400px;
 	overflow: hidden;
 	position: relative;
+	bottom: 0;
 	background-color: #c8d8e4;
 	color: #2b6777;
 	padding: 100px 0 30px;
@@ -697,6 +698,7 @@ footer {
 	font-size: 12px;
 	line-height: 20px;
 	font-family: "Poppins", sans-serif;
+	margin-top: 20px;
 }
 .footrow {
 	width: 85%;
@@ -770,7 +772,7 @@ ul li a {
 	max-height: 400px;
 	overflow: hidden;
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 	background-color: #c8d8e4;
 	color: #2b6777;
 	padding: 100px 0 30px;

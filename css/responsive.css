@@ -111,7 +111,7 @@
 		top: 0.8vw;
 		right: 8vw;
 	}
-	.footer2 {
+	/* .footer2 {
 		width: 5000px;
 		max-height: 400px;
 		overflow: hidden;
@@ -124,7 +124,7 @@
 		font-size: 12px;
 		line-height: 20px;
 		font-family: "Poppins", sans-serif;
-	}
+	} */
 	.post-left{
 		width: 69vh;
 		height: 190vh;
@@ -282,7 +282,7 @@
 		font-size: larger;
 		padding-top: 47px;
 	}
-	footer {
+	/* footer {
 		width: 5000px;
 		max-height: 400px;
 		overflow: hidden;
@@ -295,7 +295,7 @@
 		font-size: 12px;
 		line-height: 20px;
 		font-family: "Poppins", sans-serif;
-	}
+	} */
 	.card1 {
 		display: grid;
 		grid-template-columns: 20.5vw;
