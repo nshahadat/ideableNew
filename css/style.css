@@ -689,8 +689,7 @@ footer {
 	width: 5000px;
 	max-height: 400px;
 	overflow: hidden;
-	position: absolute;
-	bottom: -29.5%;
+	position: relative;
 	background-color: #c8d8e4;
 	color: #2b6777;
 	padding: 100px 0 30px;
@@ -770,8 +769,8 @@ ul li a {
 	width: 5000px;
 	max-height: 400px;
 	overflow: hidden;
-	position: absolute;
-	bottom: -100%;
+	position: relative;
+	bottom: 0px;
 	background-color: #c8d8e4;
 	color: #2b6777;
 	padding: 100px 0 30px;
@@ -852,7 +851,7 @@ ul li a {
 	top: 1vw;
 	right: 13vw;
 }
-.logout-btn button {
+.logout-btn  {
 	width: 80px;
 	background-color: #2b6777;
 	border: none;
@@ -1534,4 +1533,151 @@ textarea::-webkit-scrollbar{
 	position: absolute;
 	left:50%;
 	height:600px;
+}
+/* investor-feed css */
+.feed-container{
+	width: 100vh;
+	max-height: fit-content;
+	border: #000 solid 1px;
+	margin-top: 150px;
+	margin-left: 220px;
+	display: flex;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+}
+.feed-left{
+	padding-left: 20px;
+}
+
+#moreText{
+	display: none;
+}
+.feed-img{
+	float: left;
+	width: 20%;
+	height: 10%;
+	padding-right: 20px;
+}
+.feed-btn1{
+	width: 70px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+
+}
+.feed-btn1.transparent:hover {
+	background-color: white;
+	color: #2b6777;
+}
+
+.feed-btn1:hover {
+	background-color: #52ab98;
+}
+.feed-btn2{
+	width: 70px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+
+}
+
+.feed-btn2.transparent:hover {
+	background-color: white;
+	color: #2b6777;
+}
+
+.feed-btn2:hover {
+	background-color: #52ab98;
+}
+.invest-btn{
+	width: 70px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+
+}
+.invest-btn.transparent:hover {
+	background-color: white;
+	color: #2b6777;
+}
+
+.invest-btn:hover {
+	background-color: #52ab98;
+}
+.ask-btn{
+	width: 70px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	bottom:20px;
+	margin-left:20px;
+
+}
+.ask-btn.transparent:hover {
+	background-color: white;
+	color: #2b6777;
+}
+
+.ask-btn:hover {
+	background-color: #52ab98;
+}
+.ques{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.userheader{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.terms-policies{
+	padding-bottom: 20px;
+}
+.feed-right{
+	padding-right: 20px;
+	position: absolute;
+	bottom: 76%;
+    left: 77%;
+	font-family: 'Inter', sans-serif;
+}
+.switch-cat{
+	padding: 20px;
+	text-align: center;
 }
