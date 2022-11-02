@@ -218,5 +218,5 @@ else{
 
 ?>
 <?php
-include ADMIN . '/includes/footer2.php';
+include ADMIN . '/includes/footer.php';
 ?> 

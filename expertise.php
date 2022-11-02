@@ -71,5 +71,5 @@ include "includes/dbConfig.php";
     </div>
    
 <?php
-include "includes/footer2.php";
+include "includes/footer.php";
 ?>
