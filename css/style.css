@@ -853,7 +853,7 @@ ul li a {
 	top: 1vw;
 	right: 13vw;
 }
-.logout-btn  {
+.logout-btn button {
 	width: 80px;
 	background-color: #2b6777;
 	border: none;
@@ -1682,4 +1682,73 @@ textarea::-webkit-scrollbar{
 .switch-cat{
 	padding: 20px;
 	text-align: center;
+}
+/* inventor-profile css */
+.inventor-pro-container{
+	font-family: 'Poppins', sans-serif; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+	border: 1px solid black;
+	margin-top: 100px;
+	margin-left: 470px;
+	margin-bottom: 125px;
+	width: 50%;
+	padding: 10px;
+}
+.inventor-prof-header{
+	margin-top: 20px;
+}
+ 
+.inventor-prof-btn1 {
+	width: 180px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	left:30% ;
+	bottom:50%;
+}
+.inventor-prof-btn2 {
+	width: 180px;
+	background-color: #2b6777;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 0.3rem;
+	/* display: block; */
+	color: #fff;
+	font-weight: 600;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	left:30% ;
+	bottom: 20%;
+
+} 
+.inventor-profile span{
+	color:#2b6777  ;
+}
+.investor-pro-container{
+	font-family: 'Poppins', sans-serif; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+	border: 1px solid black;
+	margin-top: 100px;
+	margin-left: 470px;
+	margin-bottom: 180px;
+	width: 50%;
+	padding: 10px;
 }
