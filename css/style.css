@@ -1688,14 +1688,14 @@ textarea::-webkit-scrollbar{
 	font-family: 'Poppins', sans-serif; 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	margin-bottom: 100px;
 	border: 1px solid black;
 	margin-top: 100px;
 	margin-left: 470px;
-	margin-bottom: 125px;
+	margin-bottom: 230px;
 	width: 50%;
 	padding: 10px;
+	padding-left: 100px;
 }
 .inventor-prof-header{
 	margin-top: 20px;
@@ -1714,9 +1714,9 @@ textarea::-webkit-scrollbar{
 	margin: 10px 0;
 	cursor: pointer;
 	transition: 0.5s;
-	position: relative;
-	left:30% ;
-	bottom:50%;
+	position: absolute;
+	left:60% ;
+	bottom:75%;
 }
 .inventor-prof-btn2 {
 	width: 180px;
@@ -1731,9 +1731,9 @@ textarea::-webkit-scrollbar{
 	margin: 10px 0;
 	cursor: pointer;
 	transition: 0.5s;
-	position: relative;
-	left:30% ;
-	bottom: 20%;
+	position: absolute;
+	left:60%;
+	bottom:63%;
 
 } 
 .inventor-profile span{
@@ -1743,12 +1743,12 @@ textarea::-webkit-scrollbar{
 	font-family: 'Poppins', sans-serif; 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	margin-bottom: 100px;
 	border: 1px solid black;
 	margin-top: 100px;
 	margin-left: 470px;
-	margin-bottom: 180px;
+	margin-bottom: 230px;
 	width: 50%;
 	padding: 10px;
+	padding-left: 100px;
 }
