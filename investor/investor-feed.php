@@ -141,7 +141,6 @@ while ($post_fetch_data = $post_fetch_result->fetch_assoc()) {
     <a href="/ideable/investor/idea-required-files.php" target="_blank">Media Files</a>
     <a href="/ideable/investor/idea-required-files.php" target="_blank">Doc Files</a>
     <p >Theoratically Proved: <?php echo $post_fetch_tp; ?>; Practically Proved: <?php echo $post_fetch_pp; ?>; Demo: <?php echo $post_fetch_demo; ?>; Business Model: <?php echo $post_fetch_bm; ?>; Patent: <?php echo $post_fetch_patent; ?>; Approximate Time: <?php echo $post_fetch_at; ?></p>
-    
     <h6 class ="ques">ask any questions before investing (if any)</h6>
     <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
                 <script>
