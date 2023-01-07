@@ -15,15 +15,16 @@ $link = "page.php";
 // limit content character
 $limit = 100;
 // Called readMore() function to convert full content to read more link
-echo readMore($content,$link,"id",$page_id, $limit, $limit);
+echo readMore($content, $link, "id", $page_id, $limit, $limit);
 ?>
 
 <?php
 // Function to create read more link of a content with link to full page
-function readMore($content,$link,$var,$id, $limit) {
-$content = substr($content,0,$limit);
-$content = substr($content,0,strrpos($content,' '));
-$content = $content." <a href='$link?$var=$id'>Read More...</a>";
-return $content;
+function readMore($content, $link, $var, $id, $limit)
+{
+    $content = substr($content, 0, $limit);
+    $content = substr($content, 0, strrpos($content, ' '));
+    $content = $content . " <a href='$link?$var=$id'>Read More...</a>";
+    return $content;
 }
 ?>
