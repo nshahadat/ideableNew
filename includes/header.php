@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,4 +17,5 @@
     <title>ideable</title>
     <link rel="icon" href="/ideable/media/ideable_logo.png">
 </head>
+
 <body>
