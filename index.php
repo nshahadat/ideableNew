@@ -53,17 +53,18 @@ include "includes/dbConfig.php";
             <div class="gallery">
                 <h2 class="gallery-title">Seal</h2>
                 <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
-                <p class="gallery-desc">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
+                <p class="gallery-desc"> <a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
                     clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
                     Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</p>
+                    seals), and Phocidae (the earless seals, or true seals).</a></p>
             </div>
             <div class="gallery">
                 <h2 class="gallery-title">Lion</h2>
                 <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-                <p class="gallery-desc">The lion (Panthera leo) is a species in the family Felidae and a member of the
-                    genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy
-                    tuft at the end of its tail. It is sexually dimorphic; adult male lions have a prominent mane.</p>
+                <p class="gallery-desc"><a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
+                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
+                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
+                    seals), and Phocidae (the earless seals, or true seals).</a></p>
             </div>
             <div class="gallery">
                 <h2 class="gallery-title">Hawk</h2>
