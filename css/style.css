@@ -280,10 +280,12 @@ font-family: 'Poppins', sans-serif;
 }
 /* card css */
 .gal-container {
-    display: flex;
+    cursor: pointer;
+    margin-top: 100px;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 .gallerys {
 	width: 100%;
@@ -334,6 +336,9 @@ font-family: 'Poppins', sans-serif;
   .gallery:hover .gallery-desc {
 	opacity: 1;
 	height: 100%;
+  }
+  a {
+    text-decoration: none !important;
   }
   
   h1 {
