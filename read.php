@@ -15,7 +15,7 @@ $link = "page.php";
 // limit content character
 $limit = 100;
 // Called readMore() function to convert full content to read more link
-echo readMore($content, $link, "id", $page_id, $limit, $limit);
+echo readMore($content, $link, "id", $page_id, $limit);
 ?>
 
 <?php
