@@ -339,7 +339,7 @@ font-family: 'Poppins', sans-serif;
   h1 {
 	font-size: 2.8rem;
 	color: #fff;
-	margin: 40px 0 20px 0;
+	/* margin: 40px 0 20px 0; */
 	text-align: center;
   }
   
@@ -1465,12 +1465,14 @@ textarea::-webkit-scrollbar{
 	position: absolute;
 	padding-top: 96px;
 	left: 20%;
+	color: #000000;
 }
 .ex-header2{
 	position: absolute;
 	padding-top: 96px;
 	padding-bottom: 20px;
 	left: 72.5%;
+	color: #000000;
 }
 .hrline{
 	width: 1px;
