@@ -3,6 +3,7 @@ define('ADMIN', 'C:/xampp/htdocs/ideable');
 include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
+error_reporting(0);
 session_start();
 ?>
 
@@ -43,18 +44,22 @@ $_SESSION['title'] = $post_fetch_data['title'];
         <button class="feed-btn2">report</button>
         <img src="<?= $_SESSION['post_fetch_thumb_dir'] ?>" class="feed-img " alt="">
 
-        <p> <?= $post_fetch_des ?> </p>
+        <p>
+            <?= $post_fetch_des ?>
+        </p>
 
-        
+
         <a href="/ideable/investor/idea-required-files.php" target="_blank">Media Files</a>
         <a href="/ideable/investor/idea-required-files.php" target="_blank">Doc Files</a>
-        Theoratically Proved: Practically Proved: Demo: Business Model: Patent: Approximate Time: </p>
+        <p>Theoratically Proved: <?= $post_fetch_tp; ?>; Practically Proved: <?= $post_fetch_pp; ?>;
+            Demo: <?= $post_fetch_demo; ?>; Business Model: <?= $post_fetch_bm; ?>; Patent: <?= $post_fetch_patent; ?>;Approximate Time: <?= $post_fetch_at; ?></p>
         <h6 class="ques">ask any questions before investing (if any)</h6>
         <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
         <button class="ask-btn" name="ask-btn">ask</button></form>
         <p>or click this button if you are interested in investing</p>
         <form action="/ideable/investor/investor-feed-confirm-email.php" method="post">
             <button class="invest-btn" name="invest-confirm-btn">invest</button>
+            <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
         </form>
         <p class="terms-policies">before investing read our <a href="#">terms and policies</a></p>
     </section>

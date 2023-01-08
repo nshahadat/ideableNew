@@ -2,7 +2,8 @@
 
 define('ROOT', 'C:/xampp/htdocs/ideable');
 include ROOT . '/includes/dbConfig.php';
-include ROOT . '/investor/investor-feed.php';
+
+session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -43,10 +44,19 @@ function send_confirm_email($user_email)
 }
 
 $user_email = $_SESSION['email'];
+$a = $_SESSION['send_inventor_email'];
 
-send_confirm_email($user_email);
+if (send_confirm_email($user_email)) {
+    echo "<script>alert('Your email has been sent');
+    </script>";
+} else {
+    echo "<script>alert('Your email has not been sent $user_email');
+    </script>";
+}
 
-echo "<script>alert('An email has been sent to the inventor. Please wait until he contacts you.');
-    window.location='/ideable/investor/investor-feed.php';</script>";
+
+
+// echo "<script>alert('An email has been sent to the inventor. Please wait until he contacts you.');
+//     window.location='/ideable/investor/investor-feed.php';</script>";
 
 ?>
