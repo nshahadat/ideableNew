@@ -9,52 +9,67 @@ include ADMIN . '/includes/dbConfig.php';
         <input type="text" id="myInput" onkeyup='tableSearch()' placeholder="Name">
         <table class="table" id="myTable" data-filter-control="true" data-show-search-clear-button="true">
             <tr>
-                <th>Post Id</th>
-                <th>Post Title</th>
-                <th>Reports</th>
+                <th>Investor Id</th>
+                <th>Investor Name</th>
+                <th>Investor Email</th>
+                <th>OTP</th>
+                <th>Investor Details</th>
+                <th>Investor Dp Dir</th>
                 <th></th>
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Alfreds Futterkiste</td>
-                <td><input type="button" class="delete-btn" value="Delete">
-                <input type="button" class="table-btn" value="Warn"></td>
+                <td>Maria Anders</td>
+                <td>yes</td>
+                <td>no</td>
+                <td><input type="button" class="delete-btn" value="Delete"></td>
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Alfreds Futterkiste</td>
-                <td><input type="button" class="delete-btn" value="Delete">
-                <input type="button" class="table-btn" value="Warn"></td>
+                <td>Maria Anders</td>
+                <td>yes</td>
+                <td>no</td>
+                <td><input type="button" class="delete-btn" value="Delete"></td>
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Alfreds Futterkiste</td>
-                <td><input type="button" class="delete-btn" value="Delete">
-                <input type="button" class="table-btn" value="Warn"></td>
+                <td>Maria Anders</td>
+                <td>yes</td>
+                <td>no</td>
+                <td><input type="button" class="delete-btn" value="Delete"></td>
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Alfreds Futterkiste</td>
-                <td><input type="button" class="delete-btn" value="Delete">
-                <input type="button" class="table-btn" value="Warn"></td>
+                <td>Maria Anders</td>
+                <td>yes</td>
+                <td>no</td>
+                <td><input type="button" class="delete-btn" value="Delete"></td>
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Alfreds Futterkiste</td>
-                <td><input type="button" class="delete-btn" value="Delete">
-                <input type="button" class="table-btn" value="Warn"></td>
+                <td>Maria Anders</td>
+                <td>yes</td>
+                <td>no</td>
+                <td><input type="button" class="delete-btn" value="Delete"></td>
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Alfreds Futterkiste</td>
-                <td><input type="button" class="delete-btn" value="Delete">
-                <input type="button" class="table-btn" value="Warn"></td>
+                <td>Maria Anders</td>
+                <td>yes</td>
+                <td>no</td>
+                <td><input type="button" class="delete-btn" value="Delete"></td>
         </table>
     </div>
 
