@@ -5,10 +5,10 @@
         <div class="dropdown">
             <li><a href="#"><button>Categories</button></a></li>
             <div class="dropdown-content">
-                <a href="#">Technology</a>
-                <a href="#">Farming</a>
-                <a href="#">Media</a>
-                <a href="#">Education</a>
+            <a href="/ideable/categoreis/technology.php">Technology</a>
+                <a href="/ideable/categoreis/farming.php">Farming</a>
+                <a href="/ideable/categoreis/media.php">Media</a>
+                <a href="/ideable/categoreis/education.php">Education</a>
             </div>
         </div>
         <li><a href="/ideable/expertise.php">Expertise</a></li>
