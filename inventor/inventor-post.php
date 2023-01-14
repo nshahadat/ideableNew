@@ -212,11 +212,10 @@ if (isset($_POST['upload-btn'])) {
         echo $upload_sql;
 
         if ($mysqli->query($upload_sql)) {
-            echo "Uploaded";
+            echo "<script>alert('Post uploaded successfully!');</script>";
         } else if (die($mysqli->error)) {
-            echo "Upload failed";
+            echo "<script>alert('Post upload failed');</script>";
         }
-        echo "<script>alert('Post uploaded successfully!');</script>";
         // echo "<script>alert('$thumb_files_name');</script>";
         // echo "<script>alert('$doc_files_name');</script>";
         // echo "<script>alert('$video_files_name');</script>";

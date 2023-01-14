@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 21, 2022 at 11:38 AM
+-- Generation Time: Jan 14, 2023 at 09:03 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `ideable`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `admin_email` varchar(255) NOT NULL,
+  `admin_pass` char(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `admin_email`, `admin_pass`) VALUES
+(1, 'admin01', 'admin01@ideable.com', 'ideable24/7');
 
 -- --------------------------------------------------------
 
@@ -42,10 +62,10 @@ CREATE TABLE `inventor` (
 --
 
 INSERT INTO `inventor` (`inventor_id`, `inventor_name`, `inventor_email`, `inventor_pass`, `otp`, `inventor_details`, `inventor_dp_dir`) VALUES
-(1, 'test_inventor_01', 'ti1@ideable.com', 'imbiggani', '', '', ''),
+(1, 'test_inventor_01', 'ti1@ideable.com', 'imbiggani', '380940', '', ''),
 (3, 'First ideable inventor', 'ideabletest@gmail.com', 'qwerty', '178492', '', ''),
-(4, 'Shahadat Nayeem', 'shahadatnayeem23@gmail.com', 'pop', '471844', '', ''),
-(5, 'test_user_08', 'shahanayeem23@gmail.com', '404', '', '', '');
+(4, 'Shahadat Nayeem', 'shahadatnayeem23@gmail.com', 'pop', '661856', '', ''),
+(5, 'test_user_08', 'shahadatsaad23@gmail.com', '404', '205105', '', '');
 
 -- --------------------------------------------------------
 
@@ -82,7 +102,7 @@ CREATE TABLE `investor` (
 INSERT INTO `investor` (`investor_id`, `investor_name`, `investor_email`, `investor_pass`, `otp`, `investor_details`, `investor_dp_dir`) VALUES
 (1, 'test_user_01', 'tu1@ideable.com', 'testing101', '', '', ''),
 (2, 'Engineer', 'eng101@gmail.com', '787', '', '', ''),
-(3, 'Shahadat Saad', 'nshahadat3@gmail.com', 'reset', '180936', '', '');
+(3, 'Shahadat Saad', 'nshahadat3@gmail.com', 'hack3d', '385943', '', '');
 
 -- --------------------------------------------------------
 
@@ -97,6 +117,7 @@ CREATE TABLE `post` (
   `inventor_email` varchar(50) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
+  `post_comments` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL,
   `doc_files_dir` varchar(255) NOT NULL,
   `media_files_dir` varchar(255) NOT NULL,
@@ -122,14 +143,21 @@ CREATE TABLE `post` (
 -- Dumping data for table `post`
 --
 
-INSERT INTO `post` (`post_id`, `inventor_id`, `inventor_name`, `inventor_email`, `title`, `description`, `category`, `doc_files_dir`, `media_files_dir`, `thumb_files_dir`, `speech_files_dir`, `type_of_investment`, `area_of_investment`, `planning`, `patent`, `theoratically_proven`, `practically_proven`, `demo`, `business_model`, `related_projects`, `approximate_time`, `likes`, `report`, `hide`, `timestamp`) VALUES
-(2, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 13:21:28'),
-(3, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 13:22:39'),
-(4, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 14:11:11'),
-(5, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 14:12:06'),
-(6, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 14:12:33'),
-(7, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 14:19:32'),
-(8, 5, 'test_user_08', 'shahanayeem23@gmail.com', 'none', 'none', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2022-09-17 14:20:13');
+INSERT INTO `post` (`post_id`, `inventor_id`, `inventor_name`, `inventor_email`, `title`, `description`, `post_comments`, `category`, `doc_files_dir`, `media_files_dir`, `thumb_files_dir`, `speech_files_dir`, `type_of_investment`, `area_of_investment`, `planning`, `patent`, `theoratically_proven`, `practically_proven`, `demo`, `business_model`, `related_projects`, `approximate_time`, `likes`, `report`, `hide`, `timestamp`) VALUES
+(2, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-07 17:49:15'),
+(3, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-07 17:49:36'),
+(4, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Farming', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-14 09:27:24'),
+(5, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Farming', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-14 09:27:32'),
+(6, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Education', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-14 09:27:48'),
+(7, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Education', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-14 09:27:57'),
+(8, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'none', 'none', '', 'Media', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, 0, '', '2023-01-14 09:28:15'),
+(9, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'a', 'a', '', 'Media', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'a', 'a', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'a', 0, 0, '', '2023-01-14 09:28:22'),
+(10, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'w', 'w', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'w', 'w', '', '', 'No', 'Yes', 'Yes', '', 'No', 'w', 0, 0, '', '2023-01-07 17:50:09'),
+(11, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'g', 'g', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'g', 'gg', '', '', 'Yes', 'No', 'Yes', '', 'Yes', 'g', 0, 0, '', '2023-01-07 17:50:14'),
+(12, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'q', 'q', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'q', 'q', '', '', 'No', 'Yes', 'Yes', '', 'Yes', 'q', 0, 0, '', '2023-01-07 17:50:21'),
+(13, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'z', 'z', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/3.jpg', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/4.jpg', 'z', 'z', '', '', 'Yes', 'No', 'Yes', '', 'Yes', 'z', 0, 0, '', '2023-01-07 17:50:25'),
+(14, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'x', 'x', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/3.jpg', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/4.jpg', 'x', 'x', '', '', 'Yes', 'Yes', 'No', '', 'Yes', 'x', 0, 0, '', '2023-01-07 17:50:29'),
+(28, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'Flying Car', 'A flying car or roadable aircraft is a type of vehicle which can function both as a personal car or automobile and as an aircraft. As used here, this includes vehicles which drive as motorcycles when on the road. The term \"flying car\" is also sometimes used to include hovercars.', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/demoFiles.docx', '/ideable/inventor/dbFiles/mediaFiles/demoVideo.mp4', '/ideable/inventor/dbFiles/thumbFiles/6.jpg', '/ideable/inventor/dbFiles/speechFiles/demoVideo.mp4', 'Money & Instruments', 'Flying Technology', '', '', 'Yes', 'No', 'Yes', '', 'No', '5 Years', 0, 0, '', '2022-11-09 12:45:57');
 
 -- --------------------------------------------------------
 
@@ -145,6 +173,12 @@ CREATE TABLE `review` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `inventor`
@@ -183,6 +217,12 @@ ALTER TABLE `review`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `inventor`
 --
 ALTER TABLE `inventor`
@@ -198,7 +238,7 @@ ALTER TABLE `investor`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- Constraints for dumped tables
