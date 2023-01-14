@@ -56,11 +56,20 @@ $_SESSION['title'] = $post_fetch_data['title'];
         <h6 class="ques">ask any questions before investing (if any)</h6>
         <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
         <button class="ask-btn" name="ask-btn">ask</button></form>
-        <p>or click this button if you are interested in investing</p>
-        <form action="/ideable/investor/investor-feed-confirm-email.php" method="post">
-            <button class="invest-btn" name="invest-confirm-btn">invest</button>
-            <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
-        </form>
+        <div class="single-post1">
+            <p>or click this button if you are interested in investing</p>
+            <form action="/ideable/investor/investor-feed-confirm-email.php" method="post">
+                <button class="invest-btn" name="invest-confirm-btn">invest</button>
+                <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
+            </form>
+        </div>
+        <div class="single-post2">
+            <p>If You Want Review On This Idea Click This  </p>
+            <form action="/ideable/investor/investor-feed-confirm-email.php" method="post">
+                <button class="review-btn" name="invest-confirm-btn">Review</button>
+                <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
+            </form>
+        </div>
         <p class="terms-policies">before investing read our <a href="#">terms and policies</a></p>
     </section>
 </div>
