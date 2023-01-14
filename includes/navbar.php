@@ -23,7 +23,7 @@
                 <a href="/ideable/categoreis/education.php">Education</a>
             </div>
         </div>
-        <li><a href="#">Expertise</a></li>
+        <li><a href="/ideable/expertise.php">Expertise</a></li>
         <li><a href="/ideable/inventor/inventor-login.php">inventor</a></li>
         <!-- <div style="display: flex;align-items:center;">
             <form action="#" class="search-bar">

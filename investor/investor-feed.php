@@ -44,7 +44,7 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
                         <?php echo $post_fetch_title ?>
                     </h2>
                     <img src="<?php echo $post_fetch_data['thumb_files_dir']; ?>" alt="">
-                    <a href="/ideable/investor/singlepost.php?id=<?= $post_fetch_id ?>">
+                    <a href="/ideable/investor/singlepost.php?id=<?= $post_fetch_id ?>" style="color:black">
                         <p class="gallery-desc">
                             <?php echo $post_fetch_des; ?>
                         </p>

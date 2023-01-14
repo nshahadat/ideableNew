@@ -4,64 +4,57 @@ include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
 ?>
-<div class="gal-container">
-        <div class="gallerys">
-            <div class="gallery">
-                <h2 class="gallery-title">Seal</h2>
-                <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
-                <p class="gallery-desc"> <a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
-                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
-                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</a></p>
-            </div>
-            <div class="gallery">
-                <h2 class="gallery-title">Lion</h2>
-                <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-                <p class="gallery-desc"><a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
-                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
-                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</a></p>
-            </div>
-            <div class="gallery">
-                <h2 class="gallery-title">Hawk</h2>
-                <img src="https://images.unsplash.com/photo-1534251369789-5067c8b8602a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-                <p class="gallery-desc"><a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
-                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
-                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</a></p>
+<?php
+// if(!isset($_SESSION['email'])){
+//     echo "<script>alert('You have to login first');
+//     window.location='/ideable/inventor/inventor-login.php';</script>";
+//     die();
+// }
+$post_fetch_sql = "SELECT * FROM $post WHERE category = 'Education'";
+$post_fetch_result = $mysqli->query($post_fetch_sql);
+?>
+<div class="gallery-main-container">
+
+    <?php
+
+    while ($post_fetch_data = $post_fetch_result->fetch_assoc()) {
+        $post_fetch_username = $post_fetch_data['inventor_name'];
+        $post_fetch_id = $post_fetch_data['post_id'];
+        $post_fetch_title = $post_fetch_data['title'];
+        $post_fetch_des = $post_fetch_data['description'];
+        ?>
+        <div class="username-btn"><button><?php echo $username; ?></button></div>
+        <a href="investor-logout.php">
+            <div class="logout-btn"><button>logout</button></div>
+        </a>
+        <div class="gal-container">
+            <div class="gallerys">
+                <div class="gallery">
+                    <h2 class="gallery-title">
+                        <?php echo $post_fetch_title ?>
+                    </h2>
+                    <img src="<?php echo $post_fetch_data['thumb_files_dir']; ?>" alt="">
+                    <a href="/ideable/investor/singlepost.php?id=<?= $post_fetch_id ?>">
+                        <p class="gallery-desc">
+                            <?php echo $post_fetch_des; ?>
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="gal-container">
-        <div class="gallerys">
-            <div class="gallery">
-                <h2 class="gallery-title">Seal</h2>
-                <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
-                <p class="gallery-desc"> <a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
-                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
-                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</a></p>
-            </div>
-            <div class="gallery">
-                <h2 class="gallery-title">Lion</h2>
-                <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-                <p class="gallery-desc"><a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
-                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
-                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</a></p>
-            </div>
-            <div class="gallery">
-                <h2 class="gallery-title">Hawk</h2>
-                <img src="https://images.unsplash.com/photo-1534251369789-5067c8b8602a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-                <p class="gallery-desc"><a href="/ideable/singlepost.php">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse
-                    clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families
-                    Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur
-                    seals), and Phocidae (the earless seals, or true seals).</a></p>
-            </div>
-        </div>
-    </div>
 
 
+
+        <?php
+    }
+
+    if (isset($_POST['invest-confirm-btn'])) {
+        $_SESSION['send_inventor_email'] = $post_fetch_inventor_email;
+        $_SESSION['send_inventor_idea_title'] = $post_fetch_title;
+    }
+
+    ?>
+</div>
 <?php
 include ADMIN . '/includes/footer.php';
 ?>

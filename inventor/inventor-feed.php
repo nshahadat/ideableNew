@@ -14,14 +14,20 @@ session_start();
 
 $user_email = $_SESSION['email'];
 $user_find_sql = "SELECT * FROM $inventor WHERE inventor_email = '$user_email'";
-$result  = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
+$result = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
 $data = mysqli_fetch_array($result);
 $username = $data['inventor_name'];
 ?>
-<div class="username-btn"><button><?php echo $username; ?></button></div>
-<a href="inventor-logout.php"><div class="logout-btn"><button>logout</button></div></a>
+<div class="username-btn"><button>
+        <?php echo $username; ?>
+    </button></div>
+<a href="inventor-logout.php">
+    <div class="logout-btn"><button>logout</button></div>
+</a>
 <div class="linecontainer"></div>
-<a href="/ideable/inventor/inventor-post.php"><div class="postlink-btn"><button>Whats On Your Mind</button></div></a>
+<a href="/ideable/inventor/inventor-post.php">
+    <div class="postlink-btn"><button>Whats On Your Mind</button></div>
+</a>
 <?php
-include ADMIN . '/includes/footer.php';
+// include ADMIN . '/includes/footer.php';
 ?>
