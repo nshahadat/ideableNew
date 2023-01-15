@@ -33,5 +33,5 @@ $username = $data['inventor_name'];
     <div class="postlink-btn"><button>Whats On Your Mind</button></div>
 </a>
 <?php
-// include ADMIN . '/includes/footer.php';
+include ADMIN . '/includes/footer.php';
 ?>
