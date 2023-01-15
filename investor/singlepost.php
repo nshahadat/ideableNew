@@ -8,31 +8,31 @@ session_start();
 ?>
 
 <?php
-$user_email = $_SESSION['email'];
-$post_id = $_GET['id'];
+// $user_email = $_SESSION['email'];
+// $post_id = $_GET['id'];
 
-$post_fetch_sql = "SELECT * FROM $post WHERE post_id = $post_id";
-$post_fetch_result = $mysqli->query($post_fetch_sql);
-$post_fetch_data = $post_fetch_result->fetch_assoc();
+// $post_fetch_sql = "SELECT * FROM $post WHERE post_id = $post_id";
+// $post_fetch_result = $mysqli->query($post_fetch_sql);
+// $post_fetch_data = $post_fetch_result->fetch_assoc();
 
-$post_fetch_username = $post_fetch_data['inventor_name'];
-$post_fetch_id = $post_fetch_data['post_id'];
-$post_fetch_title = $post_fetch_data['title'];
-$post_fetch_des = $post_fetch_data['description'];
-$post_fetch_tp = $post_fetch_data['theoratically_proven'];
-$post_fetch_pp = $post_fetch_data['practically_proven'];
-$post_fetch_demo = $post_fetch_data['demo'];
-$post_fetch_bm = $post_fetch_data['business_model'];
-$post_fetch_patent = $post_fetch_data['patent'];
-$post_fetch_at = $post_fetch_data['approximate_time'];
-$post_fetch_inventor_id = $post_fetch_data['inventor_id'];
-$post_fetch_inventor_email = $post_fetch_data['inventor_email'];
-$_SESSION['post_fetch_thumb_dir'] = $post_fetch_data['thumb_files_dir'];
-$_SESSION['post_fetch_doc_dir'] = $post_fetch_data['doc_files_dir'];
-$_SESSION['post_fetch_media_dir'] = $post_fetch_data['media_files_dir'];
-$_SESSION['post_fetch_speech_dir'] = $post_fetch_data['speech_files_dir'];
-$_SESSION['inventor_name'] = $post_fetch_data['inventor_name'];
-$_SESSION['title'] = $post_fetch_data['title'];
+// $post_fetch_username = $post_fetch_data['inventor_name'];
+// $post_fetch_id = $post_fetch_data['post_id'];
+// $post_fetch_title = $post_fetch_data['title'];
+// $post_fetch_des = $post_fetch_data['description'];
+// $post_fetch_tp = $post_fetch_data['theoratically_proven'];
+// $post_fetch_pp = $post_fetch_data['practically_proven'];
+// $post_fetch_demo = $post_fetch_data['demo'];
+// $post_fetch_bm = $post_fetch_data['business_model'];
+// $post_fetch_patent = $post_fetch_data['patent'];
+// $post_fetch_at = $post_fetch_data['approximate_time'];
+// $post_fetch_inventor_id = $post_fetch_data['inventor_id'];
+// $post_fetch_inventor_email = $post_fetch_data['inventor_email'];
+// $_SESSION['post_fetch_thumb_dir'] = $post_fetch_data['thumb_files_dir'];
+// $_SESSION['post_fetch_doc_dir'] = $post_fetch_data['doc_files_dir'];
+// $_SESSION['post_fetch_media_dir'] = $post_fetch_data['media_files_dir'];
+// $_SESSION['post_fetch_speech_dir'] = $post_fetch_data['speech_files_dir'];
+// $_SESSION['inventor_name'] = $post_fetch_data['inventor_name'];
+// $_SESSION['title'] = $post_fetch_data['title'];
 ?>
 <div class="feed-container">
     <section class="feed-left">

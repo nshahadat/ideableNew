@@ -1,37 +1,46 @@
 <?php
-include "includes/header.php";
-include "includes/navbar-main.php";
-include "includes/dbConfig.php";
+define('ADMIN', 'C:/xampp/htdocs/ideable');
+include ADMIN . '/includes/header.php';
+include ADMIN . '/includes/navbar-main.php';
+include ADMIN . '/includes/dbConfig.php';
 ?>
 
-<div class="wrapper1">
-  <h1 class="aboutheader">Our Team</h1>
-  <div class="team">
-    <div class="team_member">
-      <div class="team_img">
-        <img src="/ideable/media/shahadat.jpg" alt="Team_image">
-      </div>
-      <h3>Shahadat Nayeem</h3>
-      <p class="role">Backend Developer</p>
-      <p><i>Shahadat Nayeem</i> is the backbone of ideable to build the project. With a core knowledge of php and javascript, he developed ideable in such a way so that everyone can have the maximum use of ideable with minumum time and energy. He is currently studying in on of the reputated universities of Bangladesh called Notre Dame University Bangladesh.</p>
+<div class="cont">
+        <div class="box">
+            <img src="/ideable/media/arnob.jpg" alt="">
+            <h3>About Ideable</h3>
+            <div class="visiblecont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ad consectetur quam totam accusantium ut nulla voluptatibus? Consequuntur, aperiam omnis?</p>
+            </div>
+            <div class="invisiblecont">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit aliquam ipsam cupiditate assumenda modi, sequi architecto, at, facere inventore in et. Commodi consequuntur asperiores a perspiciatis libero in deleniti deserunt optio harum nobis, iure illo laboriosam? Officiis aspernatur dignissimos illo voluptatibus recusandae maiores nihil unde necessitatibus minima odio, voluptatem officia suscipit itaque delectus expedita animi repellendus veniam alias rerum ex, quae deleniti quisquam. Quia eos minima ipsam quo eum blanditiis minus rem possimus aut facere nostrum dolores error cupiditate nesciunt optio iusto veniam, ullam velit voluptatibus necessitatibus. Vero excepturi consequuntur obcaecati voluptates sequi praesentium. Ipsa fugiat vel iste. Architecto?</p>
+            </div>
+            <button id="btn">Read More</button>
+        </div>
+
+        <div class="box">
+            <img src="/ideable/media/shahadat.jpg" alt="">
+            <h3>About Ideable</h3>
+            <div class="visiblecont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ad consectetur quam totam accusantium ut nulla voluptatibus? Consequuntur, aperiam omnis?</p>
+            </div>
+            <div class="invisiblecont">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit aliquam ipsam cupiditate assumenda modi, sequi architecto, at, facere inventore in et. Commodi consequuntur asperiores a perspiciatis libero in deleniti deserunt optio harum nobis, iure illo laboriosam? Officiis aspernatur dignissimos illo voluptatibus recusandae maiores nihil unde necessitatibus minima odio, voluptatem officia suscipit itaque delectus expedita animi repellendus veniam alias rerum ex, quae deleniti quisquam. Quia eos minima ipsam quo eum blanditiis minus rem possimus aut facere nostrum dolores error cupiditate nesciunt optio iusto veniam, ullam velit voluptatibus necessitatibus. Vero excepturi consequuntur obcaecati voluptates sequi praesentium. Ipsa fugiat vel iste. Architecto?</p>
+            </div>
+            <button id="btn">Read More</button>
+        </div>
+        <div class="box">
+            <img src="/ideable/media/safran.jpg" alt="">
+            <h3>About Ideable</h3>
+            <div class="visiblecont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ad consectetur quam totam accusantium ut nulla voluptatibus? Consequuntur, aperiam omnis?</p>
+            </div>
+            <div class="invisiblecont">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit aliquam ipsam cupiditate assumenda modi, sequi architecto, at, facere inventore in et. Commodi consequuntur asperiores a perspiciatis libero in deleniti deserunt optio harum nobis, iure illo laboriosam? Officiis aspernatur dignissimos illo voluptatibus recusandae maiores nihil unde necessitatibus minima odio, voluptatem officia suscipit itaque delectus expedita animi repellendus veniam alias rerum ex, quae deleniti quisquam. Quia eos minima ipsam quo eum blanditiis minus rem possimus aut facere nostrum dolores error cupiditate nesciunt optio iusto veniam, ullam velit voluptatibus necessitatibus. Vero excepturi consequuntur obcaecati voluptates sequi praesentium. Ipsa fugiat vel iste. Architecto?</p>
+            </div>
+            <button id="btn">Read More</button>
+        </div>
     </div>
-    <div class="team_member">
-      <div class="team_img">
-        <img src="/ideable/media/safran.jpg" alt="Team_image">
-      </div>
-      <h3>Hasibul Hassan</h3>
-      <p class="role">UI/UX Designer</p>
-      <p><i>Hasibul Hassan</i> made ideable looks good. His every touch in code made ideable more and more beautiful. He is currently studying in on of the reputated universities of Bangladesh called Notre Dame University Bangladesh.</p></div>
-    <div class="team_member">
-      <div class="team_img">
-        <img src="/ideable/media/arnob.jpg" alt="Team_image">
-      </div>
-      <h3>Arnob Mallick</h3>
-      <p class="role">Frontend Developer</p>
-      <p><i>Arnob Mallick</i> is the person for whom ideable looks so much charming. Every design and UI ideas has come from his mind. By using Css and javascript in a fine way, he made ideable UI in such a way so that everyone can enjoy the view of it before using it. He is currently studying in on of the reputated universities of Bangladesh called Notre Dame University Bangladesh.</p>
-    </div>
-  </div>
-</div>	
-<?php
-include "includes/footer.php";
+    <?php
+include ADMIN . '/includes/footer.php';
 ?>
