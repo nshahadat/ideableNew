@@ -9,12 +9,12 @@ include ADMIN . '/includes/dbConfig.php';
     <div class="forms-container">
         <div class="signin-signup">
             <form action="/ideable/investor/forget-pass-investor-backend.php" method="post" class="sign-in-form">
-            <h2 class="title">Reset your password</h2>
+                <h2 class="title">Reset your password</h2>
                 <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Email Address" name="investor_reset_email" required />
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Email Address" name="investor_reset_email" required />
                 </div>
-                <input type="submit" value="Login" name="investor_pass_reset_btn" class="btn solid" />
+                <input type="submit" value="Reset" name="investor_pass_reset_btn" class="btn solid" />
             </form>
         </div>
     </div>

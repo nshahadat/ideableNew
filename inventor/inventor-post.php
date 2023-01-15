@@ -32,77 +32,76 @@ $useremail = $data['inventor_email'];
             <h5 class="inventor-header">Informations</h5>
             <div class="wrapper">
                 <div class="input-post"> Title of your Idea </div>
-
                 <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
             </div>
             <div class="wrapper">
                 <div class="input-post"> Description </div>
-                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
-            </script>
-            <div class="wrapper3">
-                <div class="input-post"> Choose a Catagory: </div>
-                <label class="catagory" for="cars"></label>
-                <select name="category" class="select-button2">
-                    <option value="Technology">Technology</option>
-                    <option value="Farming">Farming</option>
-                    <option value="Media">Media</option>
-                    <option value="Education">Education</option>
-                </select>
-            </div>
-            <div class="wrapper">
-                <div class="input-post"> Type of investment you need </div>
-                <div class="input-post-small"> (Financial, resources, marketing etc)</div>
-                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
-            </div>
-            <div class="wrapper">
-                <div class="input-post"> Area of investment </div>
-                <div class="input-post-small"> (In which area youre going to apply the investment and how)</div>
-                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
-                <div class="wrapper2">
-                    <div class="input-post"> Do you have any demo of your idea </div>
-                    <label class="catagory" for="cars"> </label>
-                    <div class="input-post-small"> (if yes, then upload it to the media files)</div>
-                    <select name="demo" class="select-button">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                <textarea spellcheck="false" name="doi" placeholder="Type something here..."></textarea>
+                </script>
+                <div class="wrapper3">
+                    <div class="input-post"> Choose a Catagory: </div>
+                    <label class="catagory" for="cars"></label>
+                    <select name="category" class="select-button2">
+                        <option value="Technology">Technology</option>
+                        <option value="Farming">Farming</option>
+                        <option value="Media">Media</option>
+                        <option value="Education">Education</option>
                     </select>
-                </div>
-                <div class="wrapper2">
-                    <div class="input-post"> Do you have any patent of your idea </div>
-                    <select name="demo" class="select-button">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-                <div class="wrapper2">
-                    <div class="input-post"> Do you have your idea theoretically proven </div>
-                    <label class="catagory" for="cars"> <select name="theoretical" class="select-button">
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select> </label>
-                </div>
-                <div class="wrapper2">
-                    <div class="input-post">Do you have your idea practically proven </div>
-                    <label class="catagory" for="cars"> </label>
-                    <select name="practical" class="select-button">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-                <div class="wrapper2">
-                    <div class="input-post">Is there any related projects to your idea currently available </div>
-                    <label class="catagory" for="cars"><select name="Related_Projects" class="select-button">
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select> </label>
-                    <div class="input-post-small"> (if yes , then provide information in the doc file)
-                    </div>
                 </div>
                 <div class="wrapper">
-                    <div class="input-post"> Approximate time limit to complete your project </div>
-                    <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
+                    <div class="input-post"> Type of investment you need </div>
+                    <div class="input-post-small"> (Financial, resources, marketing etc)</div>
+                    <textarea spellcheck="false" name="typeofinvest" placeholder="Type something here..."></textarea>
                 </div>
-            </div>
+                <div class="wrapper">
+                    <div class="input-post"> Area of investment </div>
+                    <div class="input-post-small"> (In which area youre going to apply the investment and how)</div>
+                    <textarea spellcheck="false" name="areaofinvest" placeholder="Type something here..."></textarea>
+                    <div class="wrapper2">
+                        <div class="input-post"> Do you have any demo of your idea </div>
+                        <label class="catagory" for="cars"> </label>
+                        <div class="input-post-small"> (if yes, then upload it to the media files)</div>
+                        <select name="demo" class="select-button">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="wrapper2">
+                        <div class="input-post"> Do you have any patent of your idea </div>
+                        <select name="patent" class="select-button">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="wrapper2">
+                        <div class="input-post"> Do you have your idea theoretically proven </div>
+                        <label class="catagory" for="cars"> <select name="theoretical" class="select-button">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select> </label>
+                    </div>
+                    <div class="wrapper2">
+                        <div class="input-post">Do you have your idea practically proven </div>
+                        <label class="catagory" for="cars"> </label>
+                        <select name="practical" class="select-button">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="wrapper2">
+                        <div class="input-post">Is there any related projects to your idea currently available </div>
+                        <label class="catagory" for="cars"><select name="Related_Projects" class="select-button">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select> </label>
+                        <div class="input-post-small"> (if yes , then provide information in the doc file)
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="input-post"> Approximate time limit to complete your project </div>
+                        <textarea spellcheck="false" name="aprxtm" placeholder="Type something here..."></textarea>
+                    </div>
+                </div>
     </section>
     <section class="post-right">
         <form action="" method="post" class="post-form" id="right-hand" enctype="multipart/form-data">
@@ -142,7 +141,7 @@ $useremail = $data['inventor_email'];
             </div>
     </section>
 </div>
-<input type="button" value="Upload "Name="upload-btn"class="up-btn">
+<input type="submit" value="Upload " Name="upload-btn" class="up-btn">
 </form>
 
 <script>
@@ -154,16 +153,17 @@ $useremail = $data['inventor_email'];
 <?php
 
 if (isset($_POST['upload-btn'])) {
-    $title = $_POST['title'];
-    $des = $_POST['description'];
+    $title = $_POST['toi'];
+    $des = $_POST['doi'];
     $cat = $_POST['category'];
-    $toi = $_POST['toi'];
-    $aoi = $_POST['aoi'];
+    $toi = $_POST['typeofinvest'];
+    $aoi = $_POST['areaofinvest'];
     $demo = $_POST['demo'];
+    $patent = $_POST['patent'];
     $theoretical = $_POST['theoretical'];
     $practical = $_POST['practical'];
     $rp = $_POST['Related_Projects'];
-    $apprx_time = $_POST['apprx_time'];
+    $apprx_time = $_POST['aprxtm'];
     $thumb_files_name = $_FILES['thumbnail']['name'];
     $thumb_files_name_tmp = $_FILES['thumbnail']['tmp_name'];
     $thumb_files_dir = '/ideable/inventor/dbFiles/thumbFiles/' . $thumb_files_name;
@@ -187,7 +187,7 @@ if (isset($_POST['upload-btn'])) {
     move_uploaded_file($speech_files_name_tmp, $pathSpeech);
 
     if (!empty($_FILES['thumbnail']['name'])) {
-        $upload_sql = "INSERT IGNORE INTO $post (inventor_id, inventor_name, inventor_email, title, description, category, doc_files_dir, media_files_dir, thumb_files_dir, speech_files_dir, type_of_investment, area_of_investment, theoratically_proven, practically_proven, demo, related_projects, approximate_time) VALUES ('$userid', '$username', '$useremail', '$title', '$des', '$cat', '$doc_files_dir', '$video_files_dir', '$thumb_files_dir', '$speech_files_dir', '$toi', '$aoi', '$theoretical', '$practical', '$demo', '$rp', '$apprx_time')";
+        $upload_sql = "INSERT IGNORE INTO $post (inventor_id, inventor_name, inventor_email, title, description, category, doc_files_dir, media_files_dir, thumb_files_dir, speech_files_dir, type_of_investment, area_of_investment, theoratically_proven, practically_proven, demo, related_projects, approximate_time, patent) VALUES ('$userid', '$username', '$useremail', '$title', '$des', '$cat', '$doc_files_dir', '$video_files_dir', '$thumb_files_dir', '$speech_files_dir', '$toi', '$aoi', '$theoretical', '$practical', '$demo', '$rp', '$apprx_time', '$patent')";
 
         echo $upload_sql;
 
