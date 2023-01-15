@@ -22,7 +22,7 @@ $post_fetch_des = $post_fetch_data['description'];
 $post_fetch_tp = $post_fetch_data['theoratically_proven'];
 $post_fetch_pp = $post_fetch_data['practically_proven'];
 $post_fetch_demo = $post_fetch_data['demo'];
-$post_fetch_bm = $post_fetch_data['business_model'];
+$post_fetch_rp = $post_fetch_data['related_projects'];
 $post_fetch_patent = $post_fetch_data['patent'];
 $post_fetch_at = $post_fetch_data['approximate_time'];
 $post_fetch_inventor_id = $post_fetch_data['inventor_id'];
@@ -53,7 +53,7 @@ $_SESSION['title'] = $post_fetch_data['title'];
             </b>| Practically Proved: <b><?= $post_fetch_pp; ?></b> |
             Demo: <b>
                 <?= $post_fetch_demo; ?>
-            </b>| Business Model: <b><?= $post_fetch_bm; ?></b> | Patent: <b>
+            </b>| Related Projects: <b><?= $post_fetch_rp; ?></b> | Patent: <b>
                 <?= $post_fetch_patent; ?>
             </b> | Approximate Time: <b>
                 <?= $post_fetch_at; ?>

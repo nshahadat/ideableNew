@@ -51,34 +51,45 @@ include "includes/dbConfig.php";
     <div class="index-container">
         <div class="indexs">
             <div class="index">
-                <h2 class="index-title">Seal</h2>
-                <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+                <h2 class="index-title">Healthy Soils</h2>
+                <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt="">
-                <p class="index-desc">Pinnipeds, commonly known as
-                    seals,[a] are a widely distributed and diverse clade of carnivorous, fin-footed, semiaquatic
-                    marine mammals. They comprise the extant families Odobenidae (whose only living member is the
-                    walrus), Otariidae (the eared seals: sea lions and fur seals), and Phocidae (the earless seals,
-                    or true seals).</p>
+                <p class="index-desc">Soil provides a host of crucial services for both people and the planet. Soil puts
+                    food on our plates, purifies our water, protects us against flooding and combats drought. It’s also
+                    key to tackling climate change as it captures and stores vast amounts of carbon. There is no food
+                    security without healthy soils. Agriculture is the only essential industry but farming has one of
+                    the biggest impacts on soil health. Intensive farming eliminates species living within the soil –
+                    species that give soil its fertility. How we farm today is destroying our ability to feed the planet
+                    in the future. We can make it more healthy</p>
             </div>
             <div class="index">
-                <h2 class="index-title">Lion</h2>
-                <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                <h2 class="index-title">Robotic Hand</h2>
+                <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt="">
-                <p class="index-desc">The lion (Panthera leo) is a
-                    species in the family Felidae and a member of the genus Panthera. It has a muscular,
-                    deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It
-                    is sexually dimorphic; adult male lions have a prominent mane.</p>
+                <p class="index-desc">A man who lost his hand 17 years ago has been given the sense of touch through a
+                    brain-controlled robotic prosthetic.
+
+                    Keven Walgamott, whose arm was amputated below the elbow after an accident, can now feel 119
+                    different touch sensations through the prosthetic as if it were his own limb.
+
+                    He is able to distinguish between large, small, soft and hard objects when blindfolded, and handle
+                    delicate objects such as grapes and eggs. Everyday tasks such as putting on his wedding ring,
+                    peeling a banana or holding a mobile phone are now possible..</p>
             </div>
             <div class="index">
-                <h2 class="index-title">Hawk</h2>
-                <img src="https://images.unsplash.com/photo-1534251369789-5067c8b8602a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                <h2 class="index-title">Reusable Chalk</h2>
+                <img src="https://images.unsplash.com/photo-1587586062323-836089e60d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt="">
-                <p class="index-desc">Hawks are a group of
-                    medium-sized diurnal birds of prey of the family Accipitridae. Hawks are widely distributed and
-                    vary greatly in size.
-                    The subfamily Accipitrinae includes goshawks, sparrowhawks, sharp-shinned hawks and others. This
-                    subfamily are mainly woodland birds with long tails and high visual acuity. They hunt by dashing
-                    suddenly from a concealed perch.</p>
+                <p class="index-desc">Chalk is a soft, white, porous, sedimentary carbonate rock. It is a form of
+                    limestone composed of the mineral calcite and originally formed deep under the sea by the
+                    compression of microscopic plankton that had settled to the sea floor. Chalk is common throughout
+                    Western Europe, where deposits underlie parts of France, and steep cliffs are often seen where they
+                    meet the sea in places such as the Dover cliffs on the Kent coast of the English Channel.
+
+                    Chalk is mined for use in industry, such as for quicklime, bricks and builder's putty, and in
+                    agriculture, for raising pH in soils with high acidity. It is also used for "blackboard chalk" for
+                    writing and drawing on various types of surfaces, although these can also be manufactured from other
+                    carbonate-based minerals, or gypsum</p>
             </div>
         </div>
     </div>
