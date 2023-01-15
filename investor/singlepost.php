@@ -60,6 +60,7 @@ session_start();
             <p>or click this button if you are interested in investing</p>
             <form action="/ideable/investor/investor-feed-confirm-email.php" method="post">
             <input type="button" value="invest"class="invest-btn" name ="invest-confirm-btn">
+
                 <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
             </form>
         </div>
