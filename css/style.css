@@ -1198,7 +1198,7 @@ input.invalid {
 }
 /* expertise css  */
 :root {
-    --surface-color:whitesmoke;
+    --surface-color: whitesmoke;
     --curve: 40;
 }
 .card-container {
@@ -1524,7 +1524,6 @@ input.invalid {
     text-align: center;
 }
 /* table css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
 
 .table-container {
     min-height: 100vh;
@@ -1533,6 +1532,8 @@ input.invalid {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20vh;
 }
 #myInput {
     position: absolute;

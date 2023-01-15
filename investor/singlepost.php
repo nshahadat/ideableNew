@@ -109,7 +109,7 @@ if (isset($_POST['invest-confirm-btn'])) {
     $result = mysqli_query($mysqli, $check_sql) or die(mysqli_error($mysqli));
     $numrows = mysqli_num_rows($result);
 
-    if ($numrows = 0) {
+    if ($numrows == 0) {
 
         $sql = "INSERT IGNORE INTO $investment (post_id,investor_email) VALUES('$post_fetch_id','$user_email')";
         $mysqli->query($sql) or die($mysqli->error);
