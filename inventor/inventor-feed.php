@@ -28,10 +28,12 @@ $username = $data['inventor_name'];
 <a href="inventor-logout.php">
     <div class="logout-btn"><button>logout</button></div>
 </a>
+<div class="inventor-feed-container">
 <div class="linecontainer"></div>
 <a href="/ideable/inventor/inventor-post.php">
     <div class="postlink-btn"><button>Whats On Your Mind</button></div>
 </a>
+</div>
 <?php
-// include ADMIN . '/includes/footer.php';
+include ADMIN . '/includes/footer.php';
 ?>
