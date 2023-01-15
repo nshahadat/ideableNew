@@ -62,6 +62,10 @@ $_SESSION['title'] = $post_fetch_data['title'];
         <h6 class="ques">ask any questions before investing (if any)</h6>
         <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
         <input type="submit" value="ask" class="ask-btn" name="ask-btn">
+        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
         <div class="single-post1">
             <p>or click this submit if you are interested in investing</p>
             <form action="#" method="post">
@@ -69,6 +73,7 @@ $_SESSION['title'] = $post_fetch_data['title'];
                 <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
             </form>
         </div>
+
         <div class="single-post2">
             <p>If You Want Review On This Idea Click This </p>
             <form action="#" method="post">
