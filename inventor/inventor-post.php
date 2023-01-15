@@ -136,37 +136,37 @@ $useremail = $data['inventor_email'];
         <form action="" method="post" class="post-form" id="right-hand" enctype="multipart/form-data">
             <h5 class="inventor-header2">Media Files</h5>
             <div class="wrapper2">
-            <div class="input-post2"> Thumbnail Picture </div>
-            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('input[type="file"]').change(function (e) {
-                        var fileName = e.target.files[0].name;
-                        alert('The file "' + fileName + '" has been selected.');
+                <div class="input-post2"> Thumbnail Picture </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('input[type="file"]').change(function (e) {
+                            var fileName = e.target.files[0].name;
+                            alert('The file "' + fileName + '" has been selected.');
+                        });
                     });
-                });
-            </script>
-            <input type="file" class="hidden" id="file-thumbnail" name="thumbnail" accept="image/*" />
-            <label for="file-thumbnail" class="select-button3">Select Pictures</label>
+                </script>
+                <input type="file" class="hidden" id="file-thumbnail" name="thumbnail" accept="image/*" />
+                <label for="file-thumbnail" class="select-button3">Select Pictures</label>
             </div>
             <div class="wrapper2">
-            <div class="input-post"> Upload media files related to your project </div>
-            <div class="input-post-small2"> (Video proof, Demo, Your speech etc ) </div>
-            <input type="file" class="hidden" id="file-rVideo" name="rVideo" accept="video/*" />
-            <label for="file-rVideo" class="select-button3">Select Media Files</label>
+                <div class="input-post"> Upload media files related to your project </div>
+                <div class="input-post-small2"> (Video proof, Demo, Your speech etc ) </div>
+                <input type="file" class="hidden" id="file-rVideo" name="rVideo" accept="video/*" />
+                <label for="file-rVideo" class="select-button3">Select Media Files</label>
             </div>
             <div class="wrapper2">
-            <div class="input-post"> Upload document files related to your project </div>
-            <div class="input-post-small2"> (Theoretical prove, drawings etc)</div>
-            <input type="file" class="hidden" id="file-rFiles" name="rFiles"
-                accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
-            <label for="file-rFiles" class="select-button3">Select Documents</label>
+                <div class="input-post"> Upload document files related to your project </div>
+                <div class="input-post-small2"> (Theoretical prove, drawings etc)</div>
+                <input type="file" class="hidden" id="file-rFiles" name="rFiles"
+                    accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
+                <label for="file-rFiles" class="select-button3">Select Documents</label>
             </div>
             <div class="wrapper2">
-            <div class="input-post"> Speech/Proposal </div>
-            <div class="input-post-small2"> (Create a short video on why an investor should invest on you) </div>
-            <input type="file" class="hidden" id="file-speech" name="speech" accept="video/*" />
-            <label for="file-speech" class="select-button3">Select Media Files</label>
+                <div class="input-post"> Speech/Proposal </div>
+                <div class="input-post-small2"> (Create a short video on why an investor should invest on you) </div>
+                <input type="file" class="hidden" id="file-speech" name="speech" accept="video/*" />
+                <label for="file-speech" class="select-button3">Select Media Files</label>
             </div>
     </section>
 </div>
