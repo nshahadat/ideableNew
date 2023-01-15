@@ -1,5 +1,7 @@
 <script type="text/javascript" src="/ideable/js/script.js"></script>
 <script type="text/javascript" src="/ideable/js/app.js"></script>
+<script type="text/javascript" src="/ideable/js/aboutus.js"></script>
+
 </body>
 <footer>
     <div class="footrow">
@@ -19,8 +21,8 @@
         <ul>
             <li><a href="/ideable/index.php">Home</a></li>
             <li><a href="/ideable/about-us.php">About Us</a></li>
-            <li><a href="/ideable/terms-conditions.php">Terms and Policies</a></li>
-            <li><a href="/ideable/expertise.php">Expertise</a></li>
+            <li><a href="../ideable/terms.php">Terms and Policies</a></li>
+            <li><a href="/ideable/Contact.php">Contact Us</a></li>
         </ul>
         </div>
         <div class="footcol"><div class="social_icons">

@@ -15,7 +15,16 @@ session_start();
 // $email = $data['inventor_email'];
 // $pass = $data['inventor_pass'];
 // $details = $data['inventor_details'];
-?>
+?><div class="username-btn">
+<button>
+    <a href="/ideable/inventor/inventor-profile.php" style="color:white;">
+        <?php echo $username; ?>
+    </a>
+</button>
+</div>
+<a href="inventor-logout.php">
+<div class="logout-btn"><button>logout</button></div>
+</a> 
 <div class="edit-pro-container">
 <div class="form-style-6">
 <h3>Inventor Profile</h3>

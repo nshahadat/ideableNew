@@ -33,6 +33,7 @@ $_SESSION['post_fetch_media_dir'] = $post_fetch_data['media_files_dir'];
 $_SESSION['post_fetch_speech_dir'] = $post_fetch_data['speech_files_dir'];
 $_SESSION['inventor_name'] = $post_fetch_data['inventor_name'];
 $_SESSION['title'] = $post_fetch_data['title'];
+
 ?>
 <div class="feed-container">
     <section class="feed-left">

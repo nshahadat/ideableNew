@@ -1,11 +1,11 @@
 <nav class="small-navbar">
     <ul>
-        <li><a href="#">How <strong>ideable</strong> works</a></li>
-        <li><a href="#">Our collaboration partners</a></li>
-        <li><a href="#">Terms and Policies</a></li>
+        <li><a href="../ideable/how-work.php">How <strong>ideable</strong> works</a></li>
+        <li><a href="../ideable/collaboration.php">Our collaboration partners</a></li>
+        <li><a href="../ideable/terms.php">Terms and Policies</a></li>
     </ul>
     <section id="left-ul">
-        <li><a href="#" id="left-child">About <strong>ideable</strong> |</a></li>
+        <li><a href="../ideable/about-us.php" id="left-child">About <strong>ideable</strong> |</a></li>
     </section>
 </nav>
 <section id="logo-section">
