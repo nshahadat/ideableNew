@@ -50,10 +50,10 @@ $useremail = $data['inventor_email'];
 
                 });
             </script>
-            <div class="wrapper">
+            <div class="wrapper3">
                 <div class="input-post"> Choose a Catagory: </div>
                 <label class="catagory" for="cars"></label>
-                <select name="category" class="select-button3">
+                <select name="category" class="select-button2">
                     <option value="Technology">Technology</option>
                     <option value="Farming">Farming</option>
                     <option value="Media">Media</option>
@@ -85,40 +85,40 @@ $useremail = $data['inventor_email'];
                         textarea.style.height = `${scHeight}px`;
                     });
                 </script>
-                <div class="wrapper">
+                <div class="wrapper2">
                     <div class="input-post"> Do you have any demo of your idea </div>
                     <label class="catagory" for="cars"> </label>
                     <div class="input-post-small"> (if yes, then upload it to the media files)</div>
-                    <select name="demo" class="select-button4">
+                    <select name="demo" class="select-button">
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper2">
                     <div class="input-post"> Do you have any patent of your idea </div>
-                    <select name="demo" class="select-button4">
+                    <select name="demo" class="select-button">
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper2">
                     <div class="input-post"> Do you have your idea theoretically proven </div>
-                    <label class="catagory" for="cars"> <select name="theoretical" class="select-button4">
+                    <label class="catagory" for="cars"> <select name="theoretical" class="select-button">
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select> </label>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper2">
                     <div class="input-post">Do you have your idea practically proven </div>
                     <label class="catagory" for="cars"> </label>
-                    <select name="practical" class="select-button4">
+                    <select name="practical" class="select-button">
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper2">
                     <div class="input-post">Is there any related projects to your idea currently available </div>
-                    <label class="catagory" for="cars"><select name="Related_Projects" class="select-button5">
+                    <label class="catagory" for="cars"><select name="Related_Projects" class="select-button">
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select> </label>
@@ -135,6 +135,7 @@ $useremail = $data['inventor_email'];
     <section class="post-right">
         <form action="" method="post" class="post-form" id="right-hand" enctype="multipart/form-data">
             <h5 class="inventor-header2">Media Files</h5>
+            <div class="wrapper2">
             <div class="input-post2"> Thumbnail Picture </div>
             <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script>
@@ -146,20 +147,27 @@ $useremail = $data['inventor_email'];
                 });
             </script>
             <input type="file" class="hidden" id="file-thumbnail" name="thumbnail" accept="image/*" />
-            <label for="file-thumbnail" class="select-button2">Select Pictures</label>
+            <label for="file-thumbnail" class="select-button3">Select Pictures</label>
+            </div>
+            <div class="wrapper2">
             <div class="input-post"> Upload media files related to your project </div>
             <div class="input-post-small2"> (Video proof, Demo, Your speech etc ) </div>
             <input type="file" class="hidden" id="file-rVideo" name="rVideo" accept="video/*" />
-            <label for="file-rVideo" class="select-button7">Select Media Files</label>
+            <label for="file-rVideo" class="select-button3">Select Media Files</label>
+            </div>
+            <div class="wrapper2">
             <div class="input-post"> Upload document files related to your project </div>
             <div class="input-post-small2"> (Theoretical prove, drawings etc)</div>
             <input type="file" class="hidden" id="file-rFiles" name="rFiles"
                 accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
-            <label for="file-rFiles" class="select-button8">Select Documents</label>
+            <label for="file-rFiles" class="select-button3">Select Documents</label>
+            </div>
+            <div class="wrapper2">
             <div class="input-post"> Speech/Proposal </div>
             <div class="input-post-small2"> (Create a short video on why an investor should invest on you) </div>
             <input type="file" class="hidden" id="file-speech" name="speech" accept="video/*" />
-            <label for="file-speech" class="select-button6">Select Media Files</label>
+            <label for="file-speech" class="select-button3">Select Media Files</label>
+            </div>
     </section>
 </div>
 <button name="upload-btn" class="up-btn">Upload</button>
