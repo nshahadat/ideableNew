@@ -20,8 +20,7 @@ include ADMIN . '/includes/dbConfig.php';
         </div>
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
-    </a>
-    <input type="submit" value="Submit" class="expert-submit">      
+    </a>      
   </li>
   <li>
     <a href="" class="card">
@@ -37,7 +36,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -53,7 +51,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -69,7 +66,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>    
 </ul>
 <div class="card-header">Farming</div>
@@ -87,8 +83,7 @@ include ADMIN . '/includes/dbConfig.php';
         </div>
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
-    </a>
-    <input type="submit" value="Submit" class="expert-submit">      
+    </a>      
   </li>
   <li>
     <a href="" class="card">
@@ -104,7 +99,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -120,7 +114,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -136,7 +129,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>    
 </ul>
 <div class="card-header">Media</div>
@@ -154,8 +146,7 @@ include ADMIN . '/includes/dbConfig.php';
         </div>
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
-    </a>
-    <input type="submit" value="Submit" class="expert-submit">      
+    </a>      
   </li>
   <li>
     <a href="" class="card">
@@ -171,7 +162,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -187,7 +177,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -203,7 +192,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>    
 </ul>
 <div class="card-header">Education</div>
@@ -221,8 +209,7 @@ include ADMIN . '/includes/dbConfig.php';
         </div>
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
-    </a>
-    <input type="submit" value="Submit" class="expert-submit">      
+    </a>      
   </li>
   <li>
     <a href="" class="card">
@@ -238,7 +225,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -254,7 +240,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>
   <li>
     <a href="" class="card">
@@ -270,7 +255,6 @@ include ADMIN . '/includes/dbConfig.php';
         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
       </div>
     </a>
-    <input type="submit" value="Submit" class="expert-submit">
   </li>    
 </ul>
 </div>

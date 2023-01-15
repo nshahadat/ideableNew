@@ -17,9 +17,10 @@ $pass = $data['inventor_pass'];
 $details = $data['inventor_details'];
 ?>
 <div class="inventor-pro-container">
+    
     <h3 class="inventor-prof-header">Your Information</h3>
-    <button class="inventor-prof-btn1"><a href="/ideable/inventor/edit-profile.php" style="color:white">edit your
-            information</a></button>
+    <div class="prof-frstpart">
+    <div class="prof-frstpart1">
     <p class="inventor-profile"><span>Name:</span>
         <?= $username ?>
     </p>
@@ -30,11 +31,24 @@ $details = $data['inventor_details'];
     <p class="inventor-profile"><span>Password:</span>
         <?= $pass ?>
     </p>
+    </div>
+    <input type="button" value="Edit Your Information"class="inventor-prof-btn1" ><a href="/ideable/inventor/edit-profile.php" style="color:white"></a>
+    </div>
+    <div class="prof-secondpart">
     <h3 class="inventor-prof-header">Your Ideas</h3>
-    <button class="inventor-prof-btn2">edit your ideas</button>
+    <div class="prof-secondpart1">
     <p class="inventor-profile"><span>1.</span> Idea1</p>
+    <input type="button" value="Edit Your Idea"class="inventor-prof-btn2" >
+    </div>
+    <div class="prof-secondpart1">
     <p class="inventor-profile"><span>2.</span> Idea2</p>
+    <input type="button" value="Edit Your Idea"class="inventor-prof-btn2" >
+    </div>
+    <div class="prof-secondpart1">
     <p class="inventor-profile"><span>3.</span> Idea3</p>
+    <input type="button" value="Edit Your Idea"class="inventor-prof-btn2" >
+    </div>
+    </div>
 </div>
 <?php
 include ADMIN . '/includes/footer.php';

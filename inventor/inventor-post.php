@@ -33,22 +33,11 @@ $useremail = $data['inventor_email'];
             <div class="wrapper">
                 <div class="input-post"> Title of your Idea </div>
 
-                <input type="text" class="post-text" spellcheck="false" placeholder="Type something here..."
-                    name="title" required>
+                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
             </div>
             <div class="wrapper">
                 <div class="input-post"> Description </div>
-                <textarea spellcheck="false" name="description" placeholder="Type something here..."
-                    required></textarea>
-            </div>
-            <script>
-                const textareas = document.querySelector("textarea");
-                textareas.addEventListener("keyup", e => {
-                    textareas.style.height = "63px";
-                    let scHeight = e.target.scrollHeight;
-                    textareas.style.height = `${scHeight}px`;
-
-                });
+                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
             </script>
             <div class="wrapper3">
                 <div class="input-post"> Choose a Catagory: </div>
@@ -63,28 +52,12 @@ $useremail = $data['inventor_email'];
             <div class="wrapper">
                 <div class="input-post"> Type of investment you need </div>
                 <div class="input-post-small"> (Financial, resources, marketing etc)</div>
-                <textarea spellcheck="false" name="toi" placeholder="Type something here..." required></textarea>
-                <script>
-                    const textareass = document.querySelector("textarea");
-                    textareass.addEventListener("keyup", e => {
-                        textareass.style.height = "63px";
-                        let scHeight = e.target.scrollHeight;
-                        textareass.style.height = `${scHeight}px`;
-                    });
-                </script>
+                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
             </div>
             <div class="wrapper">
                 <div class="input-post"> Area of investment </div>
                 <div class="input-post-small"> (In which area youre going to apply the investment and how)</div>
-                <textarea spellcheck="false" name="aoi" placeholder="Type something here..." required></textarea>
-                <script>
-                    const textarea = document.querySelector("textarea");
-                    textarea.addEventListener("keyup", e => {
-                        textarea.style.height = "63px";
-                        let scHeight = e.target.scrollHeight;
-                        textarea.style.height = `${scHeight}px`;
-                    });
-                </script>
+                <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
                 <div class="wrapper2">
                     <div class="input-post"> Do you have any demo of your idea </div>
                     <label class="catagory" for="cars"> </label>
@@ -127,8 +100,7 @@ $useremail = $data['inventor_email'];
                 </div>
                 <div class="wrapper">
                     <div class="input-post"> Approximate time limit to complete your project </div>
-                    <input type="text" class="post-text" spellcheck="false" placeholder="Type something here..."
-                        name="apprx_time" required>
+                    <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
                 </div>
             </div>
     </section>
@@ -170,7 +142,7 @@ $useremail = $data['inventor_email'];
             </div>
     </section>
 </div>
-<button name="upload-btn" class="up-btn">Upload</button>
+<input type="button" value="Upload "Name="upload-btn"class="up-btn">
 </form>
 
 <script>

@@ -51,6 +51,8 @@ if (isset($_POST['inventor_signin'])) {
             </form>
             <form action="" class="sign-up-form" method="post">
                 <h2 class="title"> inventor Sign up</h2>
+                <input type="file" class="hidden" id="file-thumbnail" name="thumbnail" accept="image/*" />
+            <label for="file-thumbnail" class="select-button4">Upload Your  Profile Pic</label>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Full Name" name="u_signup_name"
