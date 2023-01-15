@@ -2,8 +2,8 @@
 session_start();
 error_reporting(0);
 
-$get_name = $_SESSION['warn_invname'];
-$get_email = $_SESSION['warn_invemail'];
+$get_email = $_SESSION['email'];
+$get_text = $_SESSION['text'];
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
-function warn_user($get_name, $get_email)
+function send_text_ideable($get_email, $get_text)
 {
     $mail = new PHPMailer(true);
 
@@ -29,23 +29,23 @@ function warn_user($get_name, $get_email)
 
         //Recipients
         $mail->setFrom('ideabletest@gmail.com', 'ideable');
-        $mail->addAddress($get_email); //Add a recipient
+        $mail->addAddress('shahadatnayeem23@gmail.com'); //Add a recipient
 
         //Content
         $mail->isHTML(true); //Set email format to HTML
-        $mail->Subject = 'Warning from ideable';
-        $mail->Body = "Hello $get_name,  Your idea on ideable got some reports. Check what is wrong immediately or we will remove it from our platform. Thank you";
+        $mail->Subject = 'New email from ideable' . $get_email;
+        $mail->Body = $get_text;
 
         if ($mail->send()) {
-            echo "<script>alert('We have sent an email to the inventor about the warning.');
-            window.location='/ideable/admin/admin-review.php';</script>";
+            echo "<script>alert('We have sent your email o ideable. Thank you!');
+            window.location='/ideable/index.php';</script>";
 
             session_unset();
             session_destroy();
         } else {
             echo "<script>
             alert('Something went wrong');
-            window.location='/ideable/admin/admin-review.php';
+            window.location='/ideable/index.php';
             </script>";
         }
     } catch (Exception $e) {
@@ -53,6 +53,5 @@ function warn_user($get_name, $get_email)
     }
 }
 
-warn_user($get_name, $get_email);
-
+send_text_ideable($get_email, $get_text);
 ?>
