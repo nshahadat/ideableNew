@@ -47,11 +47,15 @@ $user_email = $_SESSION['email'];
 $a = $_SESSION['send_inventor_email'];
 
 if (send_confirm_email($user_email)) {
-    echo "<script>alert('Your email has been sent');
+    echo "<script>
+    alert('Your email has not been sent to $user_email. Please wait until he contacts you.');
+    window.location='/ideable/investor/investor-feed.php';
     </script>";
+
+    session_unset();
+    session_destroy();
 } else {
-    echo "<script>alert('Your email has not been sent $user_email');
-    </script>";
+    echo "<script>alert('Something went wrong');</script>";
 }
 
 
