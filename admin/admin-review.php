@@ -11,6 +11,10 @@ $admin_post_search_result = mysqli_query($mysqli, $admin_post_search_sql) or die
 
 $data = [];
 ?>
+<div class="username-btn"><button><?php echo $username; ?></button></div>
+        <a href="investor-logout.php">
+            <div class="logout-btn"><button>logout</button></div>
+        </a>
 <div class="table-container">
     <hr>
     <!-- <input type="text" id="myInput" onkeyup='tableSearch()' placeholder="Name"> -->
