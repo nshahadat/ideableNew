@@ -1198,7 +1198,7 @@ input.invalid {
 }
 /* expertise css  */
 :root {
-    --surface-color: rgba(255, 255, 255, 0.12);
+    --surface-color:whitesmoke;
     --curve: 40;
   }
 .card-container{
@@ -1267,12 +1267,7 @@ input.invalid {
     bottom: 100%;
     right: 0;      
     z-index: 1;
-  }
-  
-  .card__arc path {
-    fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-  }       
+  }     
   
   .card:hover .card__header {
     transform: translateY(0);
@@ -1314,25 +1309,9 @@ input.invalid {
     -webkit-line-clamp: 3;
     overflow: hidden;
   }    
-.ex-header1 {
-    position: absolute;
-    padding-top: 96px;
-    left: 20%;
-}
-.ex-header2 {
-    position: absolute;
-    padding-top: 96px;
-    padding-bottom: 20px;
-    left: 72.5%;
-}
-.hrline {
-    width: 1px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    height: 600px;
+.card-header{
+    text-align: center;
+   margin-top: 100px;
 }
 /* investor-feed css */
 .feed-container {
