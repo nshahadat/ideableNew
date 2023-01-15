@@ -1640,9 +1640,9 @@ input.invalid {
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;
-    position: absolute;
+    /* position: absolute;
     margin-left: 20px;
-    top: 22%;
+    top: 22%; */
 }
 
 .feed-btn2.transparent:hover {
