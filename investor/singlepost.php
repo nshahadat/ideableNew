@@ -64,7 +64,7 @@ $_SESSION['title'] = $post_fetch_data['title'];
             </form>
         </div>
         <div class="single-post2">
-            <p>If You Want Review On This Idea Click This  </p>
+            <p>If You Want Review On This Idea Click This </p>
             <form action="/ideable/investor/investor-feed-confirm-email.php" method="post">
                 <button class="review-btn" name="invest-confirm-btn">Review</button>
                 <input type="hidden" name="get_inventor_email" value="<?= $post_fetch_inventor_email ?>">
