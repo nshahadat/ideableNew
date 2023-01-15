@@ -18,9 +18,13 @@ $result = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
 $data = mysqli_fetch_array($result);
 $username = $data['inventor_name'];
 ?>
-<div class="username-btn"><button>
-        <?php echo $username; ?>
-    </button></div>
+<div class="username-btn">
+    <button>
+        <a href="/ideable/inventor/inventor-profile.php" style="color:white;">
+            <?php echo $username; ?>
+        </a>
+    </button>
+</div>
 <a href="inventor-logout.php">
     <div class="logout-btn"><button>logout</button></div>
 </a>
