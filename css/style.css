@@ -1486,7 +1486,7 @@ input.invalid {
 /* investor-feed css */
 .feed-container {
     width: 100vh;
-    max-height: fit-content;
+    min-height: fit-content;
     border: #000 solid 1px;
     margin-top: 150px;
     margin-left: 220px;
@@ -1567,8 +1567,8 @@ input.invalid {
     transition: 0.5s;
     background-color: #2b6777;
 }
-.post-p4 {
-    width: 45%;
+.single-post1 {
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1576,8 +1576,8 @@ input.invalid {
     left: 0;
     margin-bottom: 20px;
 }
-.post-p3 {
-    width: 60%;
+.single-post2 {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
