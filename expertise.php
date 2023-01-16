@@ -243,7 +243,7 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Submit" class="expert-submit">
+      <input type="submit" value="Review" class="expert-submit">
     </li>
   </ul>
 </div>
