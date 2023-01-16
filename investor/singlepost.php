@@ -38,6 +38,12 @@ $_SESSION['inventor_name'] = $post_fetch_data['inventor_name'];
 $_SESSION['title'] = $post_fetch_data['title'];
 
 ?>
+<div class="username-btn"><button>
+        <?php echo $username; ?>
+    </button></div>
+<a href="investor-logout.php">
+    <div class="logout-btn"><button>logout</button></div>
+</a>
 <div class="feed-container">
     <section class="feed-left">
         <form action="#" method="post">
@@ -64,17 +70,14 @@ $_SESSION['title'] = $post_fetch_data['title'];
             </b> |
         </p>
         <h6 class="ques">ask any questions before investing (if any)</h6>
-        <form action="#" method="post">
-            <textarea spellcheck="false" name="ctext" placeholder="Type something here..."></textarea>
-            <input type="submit" value="ask" class="ask-btn" name="ask-btn">
+        <form action="#" method="post" >
+        <textarea spellcheck="false" name="toi" class="cmnt-box" placeholder="Type something here..."></textarea>
+        <input type="submit" value="ask" class="ask-btn" name="ask-btn">
         </form>
-        <?php while ($comment_fetch_data = $comment_fetch_result->fetch_assoc()) {
-            $comment_fetch_username = $comment_fetch_data['c_user_name'];
-            $comment_fetch_text = $comment_fetch_data['c_text']; ?>
-            <p class="comnt-box"><span><?= $comment_fetch_username ?>:</span>
-                <?= $comment_fetch_text ?>
-            </p>
-        <?php } ?>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
         <div class="single-post1">
             <p>or click this submit if you are interested in investing</p>
             <form action="#" method="post">

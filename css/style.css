@@ -605,7 +605,7 @@ input {
     z-index: 5;
 }
 
-form {
+form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -615,6 +615,7 @@ form {
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    z-index: 2;
 }
 
 form.sign-up-form {
@@ -622,8 +623,7 @@ form.sign-up-form {
     z-index: 1;
 }
 
-.sign-in-form {
-    z-index: 2;
+#sign-in-form  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -633,7 +633,9 @@ form.sign-up-form {
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    z-index: 2;
 }
+
 
 .title {
     font-size: 2.2rem;
@@ -1273,13 +1275,13 @@ ul li a {
 }
 .up-btn {
     font-family: "Inter", sans-serif;
-    width: 80px;
+    min-width: 80px;
     color: #fff;
     font-weight: 600;
     border: none;
     outline: none;
-    height: 39px;
     border-radius: 0.3rem;
+    min-height: 39px;
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;
@@ -1645,7 +1647,7 @@ input.invalid {
 }
 .review-btn {
     font-family: "Inter", sans-serif;
-    width: 100px;
+    width: 80px;
     color: #fff;
     font-weight: 600;
     border: none;
@@ -1655,6 +1657,12 @@ input.invalid {
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;
+}
+.cmnt-box{
+    position: absolute;
+    left:17.5%;
+    bottom: 37.5%;
+
 }
 .single-post1 {
     width: 60%;
@@ -1678,7 +1686,7 @@ input.invalid {
     background-color: white;
     color: #2b6777;
 }
-.comnt-box > span {
+.comnt > span {
     font-weight: 600;
     color: #52ab98;
 }
@@ -1713,26 +1721,28 @@ input.invalid {
 .post-p2 {
     margin-bottom: 30px;
 }
-.comnt-box {
+.comnt {
     margin-bottom: 30px;
+    margin-top: 60px;
     text-align: center;
-    max-width: 195px;
+    width: fit-content;
     border: #2b6777 2px solid;
 }
 .ask-btn {
     font-family: "Inter", sans-serif;
-    width: 80px;
+    min-width: 80px;
     color: #fff;
     font-weight: 600;
     border: none;
     outline: none;
-    height: 39px;
+    min-height: 39px;
     border-radius: 0.3rem;
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;
     position: relative;
-    bottom: 20px;
+    margin-top: 30px;
+    right: 34%;
     margin-left: 20px;
 }
 .ask-btn.transparent:hover {
@@ -1928,10 +1938,10 @@ tr:hover td {
 }
 .delete-btn {
     background: transparent;
-    width: 65px;
+    min-width: 65px;
     border: none;
     outline: none;
-    height: 39px;
+    min-height: 39px;
     border-radius: 0.3rem;
     cursor: pointer;
     transition: 0.5s;
