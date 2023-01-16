@@ -17,6 +17,7 @@ $user_find_sql = "SELECT * FROM $investor WHERE investor_email = '$user_email'";
 $result = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
 $data = mysqli_fetch_array($result);
 $username = $data['investor_name'];
+$_SESSION['username'] = $data['investor_name'];
 
 // backend of post management and show 
 

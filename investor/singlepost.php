@@ -15,6 +15,9 @@ $post_fetch_sql = "SELECT * FROM $post WHERE post_id = $post_id";
 $post_fetch_result = $mysqli->query($post_fetch_sql);
 $post_fetch_data = $post_fetch_result->fetch_assoc();
 
+$comment_fetch_sql = "SELECT * FROM $comment WHERE c_post_id = $post_id";
+$comment_fetch_result = $mysqli->query($comment_fetch_sql);
+
 $post_fetch_username = $post_fetch_data['inventor_name'];
 $post_fetch_id = $post_fetch_data['post_id'];
 $post_fetch_title = $post_fetch_data['title'];
@@ -61,12 +64,17 @@ $_SESSION['title'] = $post_fetch_data['title'];
             </b> |
         </p>
         <h6 class="ques">ask any questions before investing (if any)</h6>
-        <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
-        <input type="submit" value="ask" class="ask-btn" name="ask-btn">
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
+        <form action="#" method="post">
+            <textarea spellcheck="false" name="ctext" placeholder="Type something here..."></textarea>
+            <input type="submit" value="ask" class="ask-btn" name="ask-btn">
+        </form>
+        <?php while ($comment_fetch_data = $comment_fetch_result->fetch_assoc()) {
+            $comment_fetch_username = $comment_fetch_data['c_user_name'];
+            $comment_fetch_text = $comment_fetch_data['c_text']; ?>
+            <p class="comnt-box"><span><?= $comment_fetch_username ?>:</span>
+                <?= $comment_fetch_text ?>
+            </p>
+        <?php } ?>
         <div class="single-post1">
             <p>or click this submit if you are interested in investing</p>
             <form action="#" method="post">
@@ -129,6 +137,18 @@ if (isset($_POST['review-btn'])) {
 
     echo "<script>alert('Choose company for reviewing. Please remind that ideable has no controls over the reviewing system. It totally depends on you and the company youre interreacting with.');
     window.location='/ideable/expertise.php';</script>";
+}
+
+if (isset($_POST['ask-btn'])) {
+
+    $commentText = $_POST['ctext'];
+    $usernameforcomment = $_SESSION['username'];
+
+    $comment_sql = "INSERT IGNORE INTO $comment (c_post_id,c_user_name,c_text) VALUES('$post_fetch_id','$usernameforcomment', '$commentText')";
+    $mysqli->query($comment_sql) or die($mysqli->error);
+
+    echo "<script>alert('You just commented on this idea.');
+    window.location='/ideable/investor/investor-feed.php';</script>";
 }
 
 ?>
