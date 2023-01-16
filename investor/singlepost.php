@@ -35,6 +35,12 @@ $_SESSION['inventor_name'] = $post_fetch_data['inventor_name'];
 $_SESSION['title'] = $post_fetch_data['title'];
 
 ?>
+<div class="username-btn"><button>
+        <?php echo $username; ?>
+    </button></div>
+<a href="investor-logout.php">
+    <div class="logout-btn"><button>logout</button></div>
+</a>
 <div class="feed-container">
     <section class="feed-left">
         <form action="#" method="post">
@@ -61,12 +67,14 @@ $_SESSION['title'] = $post_fetch_data['title'];
             </b> |
         </p>
         <h6 class="ques">ask any questions before investing (if any)</h6>
-        <textarea spellcheck="false" name="toi" placeholder="Type something here..."></textarea>
+        <form action="#" method="post" >
+        <textarea spellcheck="false" name="toi" class="cmnt-box" placeholder="Type something here..."></textarea>
         <input type="submit" value="ask" class="ask-btn" name="ask-btn">
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
-        <p class="comnt-box"><span>Arnob:</span>asdasdasdasdas</p>
+        </form>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
         <div class="single-post1">
             <p>or click this submit if you are interested in investing</p>
             <form action="#" method="post">
