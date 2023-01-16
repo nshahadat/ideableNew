@@ -70,11 +70,12 @@ $_SESSION['title'] = $post_fetch_data['title'];
             </b> |
         </p>
         <h6 class="ques">ask any questions before investing (if any)</h6>
-        <form action="#" method="post" >
-        <textarea spellcheck="false" name="toi" class="cmnt-box" placeholder="Type something here..."></textarea>
-        <input type="submit" value="ask" class="ask-btn" name="ask-btn">
+        <form action="#" method="post">
+            <textarea spellcheck="false" name="toi" class="cmnt-box" placeholder="Type something here..."></textarea>
+            <input type="submit" value="ask" class="ask-btn" name="ask-btn">
         </form>
-        <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
+        <p class="comnt"><span>Arnob:</span>asdasdasdasdaskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+
         <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
         <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>
         <p class="comnt"><span>Arnob:</span>asdasdasdasdas</p>

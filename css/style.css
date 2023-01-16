@@ -605,7 +605,7 @@ input {
     z-index: 5;
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -623,7 +623,7 @@ form.sign-up-form {
     z-index: 1;
 }
 
-#sign-in-form  {
+#sign-in-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,7 +635,6 @@ form.sign-up-form {
     grid-row: 1 / 2;
     z-index: 2;
 }
-
 
 .title {
     font-size: 2.2rem;
@@ -1365,13 +1364,13 @@ textarea::-webkit-scrollbar {
 .post-text::-webkit-scrollbar {
     width: 0px;
 }
-input {
+/* input {
     padding: 10px;
-    /* width: 100%; */
+    width: 100%;
     font-size: 17px;
     font-family: Raleway;
     border: 1px solid #aaaaaa;
-}
+} */
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
@@ -1658,11 +1657,10 @@ input.invalid {
     transition: 0.5s;
     background-color: #2b6777;
 }
-.cmnt-box{
+.cmnt-box {
     position: absolute;
-    left:17.5%;
+    left: 17.5%;
     bottom: 37.5%;
-
 }
 .single-post1 {
     width: 60%;
@@ -2086,4 +2084,108 @@ td button {
 .index:hover .index-desc {
     opacity: 1;
     height: 100%;
+}
+
+/* nayeem single post */
+
+.postContainer {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.postBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50vw;
+    border: 2px solid black;
+    height: calc(fit-content + 5vh);
+    padding-top: 2vh;
+    padding-left: 2vw;
+}
+
+.postName {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(fit-content + 2vh);
+}
+
+.postInputReport {
+    margin-left: 2vw;
+    height: 4vh;
+    min-width: fit-content;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.postDetails {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.postImage {
+    padding-right: 2vw;
+}
+
+.postInfo {
+    text-align: justify;
+    padding-right: 2vw;
+}
+
+.askComment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.showComment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: calc(fit-content + 2vh);
+}
+
+.actionsofpost {
+    height: calc(fit-content + 2vh);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 2vh;
+}
+
+.reviewthepost {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.investonpost {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.termsWarning {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
