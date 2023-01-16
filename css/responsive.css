@@ -40,11 +40,6 @@
         z-index: 99999999;
         width: 100vw !important;
     }
-    .cmnt-box {
-        position: absolute;
-        left: 17.5%;
-        bottom: 25%;
-    }
 
     .userheader {
         display: flex;
