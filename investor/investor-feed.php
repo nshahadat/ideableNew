@@ -23,6 +23,12 @@ $username = $data['investor_name'];
 $post_fetch_sql = "SELECT * FROM $post";
 $post_fetch_result = $mysqli->query($post_fetch_sql);
 ?>
+<div class="username-btn"><button>
+        <?php echo $username; ?>
+    </button></div>
+<a href="investor-logout.php">
+    <div class="logout-btn"><button>logout</button></div>
+</a>
 <div class="gallery-main-container">
 
     <?php
@@ -33,10 +39,6 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
         $post_fetch_title = $post_fetch_data['title'];
         $post_fetch_des = $post_fetch_data['description'];
         ?>
-        <div class="username-btn"><button><?php echo $username; ?></button></div>
-        <a href="investor-logout.php">
-            <div class="logout-btn"><button>logout</button></div>
-        </a>
         <div class="gal-container">
             <div class="gallerys">
                 <div class="gallery">

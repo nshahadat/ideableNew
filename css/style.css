@@ -332,11 +332,13 @@ font-family: 'Poppins', sans-serif;
     background-color: white;
     overflow-y: scroll;
     transition: 0.8s ease;
+    width: 100%;
 }
 
 .gallery:hover .gallery-desc {
     opacity: 1;
     height: 100%;
+    width: 100%;
 }
 
 a {
@@ -366,167 +368,160 @@ a {
 
 /* terms css */
 
-.secRight{
-	height: 500px;
+.secRight {
+    height: 500px;
     margin-top: 40px;
-	display: flex;
-	align-items: center;
-	justify-content:space-evenly;
-	max-width:80%;
-	margin: 60px;;
-	background-color: #2b6777;
-	color: #c8d8e4;
-	font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: 60px;
+    background-color: #2b6777;
+    color: #c8d8e4;
+    font-family: "Inter", sans-serif;
 }
-.sectionTag{
-	font-size: 30px;
+.sectionTag {
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-.peras{
-	padding: 65px;
+.peras {
+    padding: 65px;
 }
-.secLeft{
-	height: 500px;
+.secLeft {
+    height: 500px;
     margin-top: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	max-width:80%;
-	margin: auto;
-	background-color: #2b6777;
-	font-family: 'Inter', sans-serif;
-	color: #c8d8e4;
-	
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    background-color: #2b6777;
+    font-family: "Inter", sans-serif;
+    color: #c8d8e4;
 }
-.sectionTag1{
-	font-size: 30px;
-	position: absolute;
-	right: 77.3vw;
-	top: 49vw;
+.sectionTag1 {
+    font-size: 30px;
+    position: absolute;
+    right: 77.3vw;
+    top: 49vw;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
 /* how we work css */
-.how-header{
+.how-header {
     margin-top: 40px;
-	background: #fff;
-	margin: 100px;
-	padding: auto;
-	text-align: center;
-	/* margin: 50px auto 120px !important; */
-	color: #2b6777
+    background: #fff;
+    margin: 100px;
+    padding: auto;
+    text-align: center;
+    /* margin: 50px auto 120px !important; */
+    color: #2b6777;
 }
-.hobe{
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.mine{
-	width: 30%;
-	min-height: 380px;
-	text-align: center;
-	position:relative;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.hobe {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-
-.serv{
-	background: #fff;
-	padding: 30px;
-	border-radius: 10px;
-	position: absolute;
-	bottom: 0;
-	z-index: 1;
-	box-shadow: 0 0 20px -15px #8b060c ;
-	transition: transform .8s;
-}
-.serv-logo{
-	width: 130px;
-	height: 130px;
-	border-radius: 50%;
-	margin: -90px auto 0;
-	background:#fff ;
-	border: 18px solid #2b6777;
-}
-.serv-logo img{
-	width: 50%;
-	margin-top: 20px;
-	transition: transform 2s;
-}
-.serv h2{
-	height: 35px;
-	width: 80%;
-	background: #fff;
-	margin: 50px auto;
-	position: relative;
-	text-size-adjust: 100px;
-}
-.serv h2::after{
-	content: '';
-	width: 40px;
-	height: 30px;
-	background:linear-gradient(to right, #fff,#2b6777) ;
-	position: absolute;
-	right: -5px;
-	top: -5px;
-	z-index: -1;
-}
-.serv h2::before{
-	content: '';
-	width: 40px;
-	height: 30px;
-	background:linear-gradient(to right,#2b6777,#fff) ;
-	position: absolute;
-	left: -5px;
-	bottom: -5px;
-	z-index: -1;
-}
-.shadowone{
-	height: 200px;
-	width: 80%;
-	background: #fff;
-	position: absolute;
-	border-radius: 10px;
-	bottom: 0;
-	left: 10%;
-	z-index: -1;
-	box-shadow: 0 0 20px -15px #8b060c ;
-	transition: transform .8s;
-
-}
-.shadowtwo{
-	height: 200px;
-	width: 64%;
-	background: #fff;
-	position: absolute;
-	border-radius: 10px;
-	bottom: 0;
-	left: 18%;
-	z-index: -2;
-}
-.mine:hover .serv{
-	transform: translateY(-50px);
-
-}
-.mine:hover .shadowone{
-	transform: translateY(-25px);
-
-}
-.mine:hover img{
-	transform: rotate(360deg);
-
+.mine {
+    width: 30%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.serv {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #8b060c;
+    transition: transform 0.8s;
+}
+.serv-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid #2b6777;
+}
+.serv-logo img {
+    width: 50%;
+    margin-top: 20px;
+    transition: transform 2s;
+}
+.serv h2 {
+    height: 35px;
+    width: 80%;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+    text-size-adjust: 100px;
+}
+.serv h2::after {
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #2b6777);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.serv h2::before {
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #2b6777, #fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowone {
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #8b060c;
+    transition: transform 0.8s;
+}
+.shadowtwo {
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+.mine:hover .serv {
+    transform: translateY(-50px);
+}
+.mine:hover .shadowone {
+    transform: translateY(-25px);
+}
+.mine:hover img {
+    transform: rotate(360deg);
+}
 
 /* aboutus css */
-.cont{
+.cont {
     width: 92%;
     margin-left: auto;
     margin-right: auto;
@@ -535,36 +530,35 @@ a {
     align-items: center;
     min-height: 140vh;
     margin-top: 20px;
-    
 }
-.box{
+.box {
     width: 30%;
     float: left;
-    background-color:#fff ;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 7px 7px gray;
     margin: 40px 20px;
 }
-.box img{
+.box img {
     width: 130px;
-	height: 130px;
-	border-radius: 50%;
-	margin: -90px auto 0;
-	background:#fff ;
-	border: 18px solid  #2b6777;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid #2b6777;
 }
-.box h3{
+.box h3 {
     margin-left: 15px;
 }
-.box p{
+.box p {
     font-size: 16px;
     line-height: 28px;
     height: 40%;
     padding: 0 15px 15px 15px;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
-#btn{
+#btn {
     background-color: teal;
     color: #fff;
     padding: 10px 15px;
@@ -572,9 +566,9 @@ a {
     border-radius: 5px;
     float: right;
 }
-#btn:hover{
+#btn:hover {
     background-color: black;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2) ;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0, 2);
 }
 /* login & registration */
 input {
@@ -628,7 +622,7 @@ form.sign-up-form {
     z-index: 1;
 }
 
-/* .sign-in-form {
+.sign-in-form {
     z-index: 2;
     display: flex;
     align-items: center;
@@ -639,7 +633,7 @@ form.sign-up-form {
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-} */
+}
 
 .title {
     font-size: 2.2rem;
@@ -1029,7 +1023,7 @@ ul li a {
 .logout-btn {
     position: absolute;
     top: 1vw;
-    right:7vw;
+    right: 7vw;
 }
 .logout-btn button {
     width: 80px;
@@ -1059,7 +1053,7 @@ ul li a {
     top: 1vw;
 }
 .username-btn button {
-    min-width:80px;
+    min-width: 80px;
     background-color: #2b6777;
     border: none;
     outline: none;
@@ -1639,9 +1633,6 @@ input.invalid {
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;
-    /* position: absolute;
-    margin-left: 20px;
-    top: 22%; */
 }
 
 .feed-btn2.transparent:hover {
@@ -1654,13 +1645,13 @@ input.invalid {
 }
 .review-btn {
     font-family: "Inter", sans-serif;
-    width: 80px;
+    width: 100px;
     color: #fff;
     font-weight: 600;
     border: none;
     outline: none;
-    height: 39px;
     border-radius: 0.3rem;
+    min-height: 39px;
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;

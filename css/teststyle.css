@@ -56,11 +56,13 @@ body {
     overflow-y: scroll;
     transition: 0.8s ease;
     z-index: 99999999;
+    width: 100%;
 }
 
 .gallery:hover .gallery-desc {
     opacity: 1;
     height: 100%;
+    min-width: 100%;
 }
 
 h1 {

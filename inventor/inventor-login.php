@@ -37,7 +37,7 @@ if (isset($_POST['inventor_signin'])) {
                 <h2 class="title"> inventor Sign in</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Email Address" name="u_signin_email"
+                    <input type="email" placeholder="Email Address" name="u_signin_email"
                         value="<?php echo $_POST['u_signin_email']; ?>" required />
                 </div>
                 <div class="input-field">
@@ -49,7 +49,7 @@ if (isset($_POST['inventor_signin'])) {
                 <p style="display: flex;justify-content: center;align-items: center;margin-top: 20px;"><a
                         href="forget-pass-inventor.php" style="color: #4590ef;">Forgot Password?</a></p>
             </form>
-            <form action="" class="sign-up-form" method="post">
+            <form action="#" class="sign-up-form" method="post">
                 <h2 class="title"> inventor Sign up</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>

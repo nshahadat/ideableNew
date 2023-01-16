@@ -37,11 +37,11 @@ $_SESSION['title'] = $post_fetch_data['title'];
 ?>
 <div class="feed-container">
     <section class="feed-left">
-        <h1 class="userheader">
-            <?= $post_fetch_username ?> has an idea of <?= $post_fetch_title ?>
-        </h1>
         <form action="#" method="post">
-            <input type="submit" value="report" class="feed-btn2" name="feed-btn2">
+            <h1 class="userheader">
+                <?= $post_fetch_username ?> has an idea of <?= $post_fetch_title ?>
+                <input type="submit" value="report" class="feed-btn2" name="feed-btn2">
+            </h1>
         </form>
         <img src="<?= $_SESSION['post_fetch_thumb_dir'] ?>" class="feed-img " alt="">
         <p>
