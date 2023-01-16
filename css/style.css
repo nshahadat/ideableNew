@@ -1897,11 +1897,13 @@ td button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 15vh;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .postBox {
+    position: inherit;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1943,7 +1945,7 @@ td button {
 
 .postImage {
     padding-right: 2vw;
-    max-width:300px;
+    max-width: 300px;
 }
 
 .postInfo {
@@ -1957,6 +1959,7 @@ td button {
     align-items: flex-start;
     flex-direction: column;
     max-width: 100%;
+    padding-top: 2vh;
 }
 
 .showComment {
@@ -1994,7 +1997,7 @@ td button {
     justify-content: center;
     align-items: flex-start;
 }
-.postInputReport{
+.postInputReport {
     font-family: "Inter", sans-serif;
     width: 80px;
     color: #fff;
@@ -2006,7 +2009,6 @@ td button {
     cursor: pointer;
     transition: 0.5s;
     background-color: #2b6777;
-
 }
 .postInputReport.transparent:hover {
     background-color: white;
@@ -2016,16 +2018,17 @@ td button {
 .postInputReport:hover {
     background-color: #52ab98;
 }
-.cmnt-box{
-   margin-top: 10px;
-   margin-bottom: 10px;
+.cmnt-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .comnt {
-    text-align: center;
-    width: fit-content;
+    text-align: start;
+    min-width: 50%;
     margin-bottom: 10px;
     margin-top: 10px;
     border: #2b6777 2px solid;
+    padding-left: 2vh;
 }
 .comnt > span {
     font-weight: 600;

@@ -3,6 +3,7 @@ define('ADMIN', 'C:/xampp/htdocs/ideable');
 include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
+session_start();
 ?>
 <?php
 // if(!isset($_SESSION['email'])){
@@ -10,6 +11,8 @@ include ADMIN . '/includes/dbConfig.php';
 //     window.location='/ideable/inventor/inventor-login.php';</script>";
 //     die();
 // }
+
+$username = $_SESSION['username'];
 $post_fetch_sql = "SELECT * FROM $post WHERE category = 'Media'";
 $post_fetch_result = $mysqli->query($post_fetch_sql);
 ?>
@@ -24,7 +27,7 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
         $post_fetch_des = $post_fetch_data['description'];
         ?>
         <div class="username-btn"><button><?php echo $username; ?></button></div>
-        <a href="investor-logout.php">
+        <a href="/ideable/investor/investor-logout.php">
             <div class="logout-btn"><button>logout</button></div>
         </a>
         <div class="gal-container">

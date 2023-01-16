@@ -24,10 +24,12 @@ $_SESSION['username'] = $data['investor_name'];
 $post_fetch_sql = "SELECT * FROM $post";
 $post_fetch_result = $mysqli->query($post_fetch_sql);
 ?>
-<div class="username-btn"><button>
-        <?php echo $username; ?>
-    </button></div>
-<a href="investor-logout.php">
+<a href="/ideable/investor/investor-profile.php">
+    <div class="username-btn"><button>
+            <?php echo $username; ?>
+        </button></div>
+</a>
+<a href="/ideable/investor/investor-logout.php">
     <div class="logout-btn"><button>logout</button></div>
 </a>
 <div class="gallery-main-container">
