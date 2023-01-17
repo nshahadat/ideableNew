@@ -44,8 +44,9 @@ $result = mysqli_query($mysqli, $invest_find_sql) or die(mysqli_error($mysqli));
                 <?= $pass ?>
             </p>
         </div>
-        <input type="button" value="Edit Your Information" class="inventor-prof-btn1"><a
-            href="/ideable/inventor/edit-profile.php" style="color:white"></a>
+        <a href="/ideable/investor/investor-edit-profile.php" style="color:white">
+            <input type="button" value="Edit Your Information" class="inventor-prof-btn1">
+        </a>
     </div>
     <div class="prof-secondpart">
         <h3 class="inventor-prof-header">Ideas you've invested on</h3>

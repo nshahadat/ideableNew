@@ -146,7 +146,7 @@ $_SESSION['title'] = $post_fetch_data['title'];
             $mysqli->query($sql) or die($mysqli->error);
 
             echo "<script>alert('We have sent an email to the inventor. Please wait until he contacts you');
-        window.location='/ideable/investor/investor-feed.php';</script>";
+            window.location='/ideable/investor/investor-feed.php';</script>";
         } else {
             echo "<script>alert('You have already invested in this idea.');
         window.location='/ideable/investor/investor-feed.php';</script>";

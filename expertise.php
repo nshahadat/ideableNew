@@ -25,7 +25,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -44,7 +46,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -63,7 +67,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
   </ul>
   <div class="card-header">Farming</div>
@@ -85,7 +91,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -104,7 +112,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -123,7 +133,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
   </ul>
   <div class="card-header">Media</div>
@@ -145,7 +157,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -164,7 +178,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -183,7 +199,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
   </ul>
   <div class="card-header">Education</div>
@@ -205,7 +223,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -224,7 +244,9 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
     <li>
       <a href="" class="card">
@@ -243,10 +265,18 @@ include ADMIN . '/includes/dbConfig.php';
           </p>
         </div>
       </a>
-      <input type="submit" value="Review" class="expert-submit">
+      <form action="#" method="POST">
+        <input type="submit" value="Review" class="expert-submit" name="reviewsubmitbtn">
+      </form>
     </li>
   </ul>
 </div>
+
+<?php
+if (isset($_POST['reviewsubmitbtn'])) {
+  echo "<script>alert('Review request for this post has been sent to the company. Wait until they contact you.')</script>";
+}
+?>
 <?php
 include ADMIN . '/includes/footer.php';
 ?>
