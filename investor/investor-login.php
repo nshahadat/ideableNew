@@ -72,6 +72,8 @@ if (isset($_POST['investor_signin'])) {
             value="<?php echo $_POST["u_signup_cpassword"]; ?>" required />
         </div>
         <input type="submit" class="btn" name="investor_signup" value="Sign up" />
+        <small>By Signing up, you will sign an <a href="/ideable/investor/nda.php">Non-Disclosure Agreement</a> with
+          ideable. Click to learn more</small>
       </form>
     </div>
   </div>
