@@ -17,12 +17,14 @@ if (isset($_POST['admin_signin'])) {
 
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
     $numrows = mysqli_num_rows($result);
+    $data = $result->fetch_assoc();
 
     if ($numrows == 0) {
         echo "<script>alert('Wrong email or password')</script>";
     } else {
         session_start();
         $_SESSION['email'] = $u_signin_email;
+        $_SESSION['username'] = $data['username'];
         header("Location: admin-review.php");
     }
 

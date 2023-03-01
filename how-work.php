@@ -15,8 +15,7 @@ include ADMIN . '/includes/dbConfig.php';
                 </div>
                 <h2>Inventor provides idea</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus earum quam eveniet
-                    iusto quis. Nemo animi odio facilis quas!
+                    A simple and user friendly way to upload any idea on ideable.
                 </p>
             </div>
             <div class="shadowone"></div>
@@ -29,8 +28,7 @@ include ADMIN . '/includes/dbConfig.php';
                 </div>
                 <h2>Investor invest on idea</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus earum quam eveniet
-                    iusto quis. Nemo animi odio facilis quas!
+                    A straightforward system to just view the contents of a post and invest if he wants.
                 </p>
             </div>
             <div class="shadowone"></div>
@@ -43,8 +41,7 @@ include ADMIN . '/includes/dbConfig.php';
                 </div>
                 <h2>Idea becomes reality</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus earum quam eveniet
-                    iusto quis. Nemo animi odio facilis quas!
+                    With the proper help, idea becomes reality with ideable!
                 </p>
             </div>
             <div class="shadowone"></div>

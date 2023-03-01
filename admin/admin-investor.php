@@ -1,4 +1,5 @@
 <?php
+session_start();
 define('ADMIN', 'C:/xampp/htdocs/ideable');
 include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
@@ -32,11 +33,15 @@ $data = [];
             $data['invName'] = $row['investor_name'];
             $data['invEmail'] = $row['investor_email']; ?>
             <tr>
-                <td><?= $data['invID'] ?></td>
+                <td>
+                    <?= $data['invID'] ?>
+                </td>
                 <td>
                     <?= $data['invName'] ?>
                 </td>
-                <td><?= $data['invEmail'] ?></td>
+                <td>
+                    <?= $data['invEmail'] ?>
+                </td>
                 <td>
                     <form action="#" method="POST">
                         <input type="submit" class="delete-btn" value="Delete" name="delete_btn">

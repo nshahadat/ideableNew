@@ -2172,3 +2172,40 @@ td button {
         width: 100%;
     }
 }
+
+/* NDA */
+.nda-container {
+    margin: 40px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    gap: 40px;
+    text-align: justify;
+}
+
+.nda-second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nda-third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nda-rules-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 20px;
+}
