@@ -1,7 +1,7 @@
 <?php
 define('ADMIN', 'C:/xampp/htdocs/ideable');
 include ADMIN . '/includes/header.php';
-include ADMIN . '/includes/navbar-main.php';
+include ADMIN . '/includes/navbar-short.php';
 include ADMIN . '/includes/dbConfig.php';
 session_start();
 ?>
@@ -34,7 +34,9 @@ $details = $data['inventor_details'];
             <p class="inventor-profile"><span>Name:</span>
                 <?= $username ?>
             </p>
-            <p class="inventor-profile"><span>Email:</span> <?= $email ?> </p>
+            <p class="inventor-profile"><span>Email:</span>
+                <?= $email ?>
+            </p>
             <p class="inventor-profile"><span>About:</span>
                 <?= $details ?>
             </p>
