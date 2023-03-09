@@ -86,7 +86,7 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
         $mysqli->query($sql) or die($mysqli->error);
 
         echo "<script>
-        alert('You've just asked permission from the inventor. Wait until he gives you the permission');
+        alert('You have just asked permission from the inventor. Wait until he gives you the permission');
         window.location = '/ideable/investor/investor-feed.php';
         </script>";
     }
