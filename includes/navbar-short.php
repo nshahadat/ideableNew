@@ -1,16 +1,6 @@
 <nav class="main-navbar" style="top:3vh !important;">
     <ul>
         <li><a href="/ideable/index.php">Home</a></li>
-        <li><a href="/ideable/investor/investor-login.php">investor</a></li>
-        <div class="dropdown">
-            <li><a href="#"><button>Categories</button></a></li>
-            <div class="dropdown-content">
-                <a href="/ideable/categoreis/technology.php?type=inventor">Technology</a>
-                <a href="/ideable/categoreis/farming.php?type=inventor">Farming</a>
-                <a href="/ideable/categoreis/media.php?type=inventor">Media</a>
-                <a href="/ideable/categoreis/education.php?type=inventor">Education</a>
-            </div>
-        </div>
         <li><a href="/ideable/expertise.php">Expertise</a></li>
         <li><a href="/ideable/inventor/inventor-login.php">inventor</a></li>
         <!-- <div style="display: flex;align-items:center;">

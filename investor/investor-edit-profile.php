@@ -7,36 +7,48 @@ session_start();
 ?>
 
 <?php
-// $user_email = $_SESSION['email'];
-// $user_find_sql = "SELECT * FROM $inventor WHERE inventor_email = '$user_email'";
-// $result = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
-// $data = mysqli_fetch_array($result);
-// $username = $data['inventor_name'];
-// $email = $data['inventor_email'];
-// $pass = $data['inventor_pass'];
-// $details = $data['inventor_details'];
+$user_email = $_SESSION['email'];
+$user_find_sql = "SELECT * FROM $investor WHERE investor_email = '$user_email'";
+$result = mysqli_query($mysqli, $user_find_sql) or die(mysqli_error($mysqli));
+$data = mysqli_fetch_array($result);
+$username = $data['investor_name'];
+$email = $data['investor_email'];
+$pass = $data['investor_pass'];
+$details = $data['investor_details'];
 ?>
 <div class="username-btn">
     <button>
-        <a href="/ideable/inventor/inventor-profile.php" style="color:white;">
+        <a href="/ideable/investor/investor-profile.php" style="color:white;">
             <?php echo $username; ?>
         </a>
     </button>
 </div>
-<a href="inventor-logout.php">
+<a href="investor-logout.php">
     <div class="logout-btn"><button>logout</button></div>
 </a>
 <div class="edit-pro-container">
-<div class="form-style-6">
-<h3>Investor Profile</h3>
-<form>
-<input type="text" name="field1" placeholder="Your Name" />
-<input type="email" name="field2" placeholder="Email Address" />
-<input type="password" name="password" placeholder="Password" />
-<input type="submit" value="Submit" />
-</form>
+    <div class="form-style-6">
+        <h3>investor Profile</h3>
+        <form action="#" method="POST">
+            <input type="text" name="newusername" placeholder="Your Name" required />
+            <input type="password" name="newuserpass" placeholder="Password" required />
+            <input type="submit" value="Submit" name="updatebtn" />
+        </form>
+    </div>
 </div>
-</div>
+
+<?php
+if (isset($_POST['updatebtn'])) {
+    $newusername = $_POST['newusername'];
+    $newuserpass = $_POST['newuserpass'];
+
+    $update_sql = "UPDATE $investor SET investor_name = '$newusername', investor_pass = '$newuserpass'";
+    $mysqli->query($update_sql) or die($mysqli->error);
+
+    echo "<script>alert('Profile updated');
+    window.location='/ideable/investor/investor-profile.php';</script>";
+}
+?>
 <?php
 include ADMIN . '/includes/footer.php';
 ?>

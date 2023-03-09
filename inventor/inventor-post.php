@@ -1,7 +1,7 @@
 <?php
 define('ADMIN', 'C:/xampp/htdocs/ideable');
 include ADMIN . '/includes/header.php';
-include ADMIN . '/includes/navbar-main.php';
+include ADMIN . '/includes/navbar-short.php';
 include ADMIN . '/includes/dbConfig.php';
 error_reporting(0);
 session_start();
@@ -21,7 +21,9 @@ $useremail = $data['inventor_email'];
 ?>
 
 <div class="username-btn"><button>
-        <?php echo $username; ?>
+        <a href="/ideable/inventor/inventor-profile.php" style="color:white;">
+            <?php echo $username; ?>
+        </a>
     </button></div>
 <a href="inventor-logout.php">
     <div class="logout-btn"><button>logout</button></div>

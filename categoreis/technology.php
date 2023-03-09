@@ -3,6 +3,7 @@ define('ADMIN', 'C:/xampp/htdocs/ideable');
 include ADMIN . '/includes/header.php';
 include ADMIN . '/includes/navbar-main.php';
 include ADMIN . '/includes/dbConfig.php';
+session_start();
 ?>
 <?php
 // if (!isset($_SESSION['email'])) {
@@ -10,6 +11,9 @@ include ADMIN . '/includes/dbConfig.php';
 //     window.location='/ideable/inventor/inventor-login.php';</script>";
 //     die();
 // }
+
+$type = $_GET['type'];
+$username = $_SESSION['username'];
 $post_fetch_sql = "SELECT * FROM $post WHERE category = 'Technology'";
 $post_fetch_result = $mysqli->query($post_fetch_sql);
 ?>
@@ -23,8 +27,10 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
         $post_fetch_title = $post_fetch_data['title'];
         $post_fetch_des = $post_fetch_data['description'];
         ?>
-        <div class="username-btn"><button><?php echo $username; ?></button></div>
-        <a href="investor-logout.php">
+        <div class="username-btn"><button>
+                <?php echo $username; ?>
+            </button></div>
+        <a href="/ideable/investor/investor-logout.php">
             <div class="logout-btn"><button>logout</button></div>
         </a>
         <div class="gal-container">
@@ -34,11 +40,18 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
                         <?php echo $post_fetch_title ?>
                     </h2>
                     <img src="<?php echo $post_fetch_data['thumb_files_dir']; ?>" alt="">
-                    <a href="/ideable/investor/singlepost.php?id=<?= $post_fetch_id ?>">
+                    <?php if ($type == 'inventor') { ?>
                         <p class="gallery-desc">
                             <?php echo $post_fetch_des; ?>
                         </p>
-                    </a>
+                    <?php } ?>
+                    <?php if ($type != 'inventor') { ?>
+                        <a href="/ideable/investor/singlepost.php?id=<?= $post_fetch_id ?>">
+                            <p class="gallery-desc">
+                                <?php echo $post_fetch_des; ?>
+                            </p>
+                        </a>
+                    <?php } ?>
                 </div>
             </div>
         </div>
