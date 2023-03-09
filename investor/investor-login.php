@@ -130,6 +130,13 @@ if (isset($_POST['investor_signup'])) {
       $mysqli->query($sql) or die($mysqli->error);
       header("Location: investor-login.php");
       echo "<script>alert('Registration is completed. Now login to continue.')</script>";
+      $_SESSION['ndaName'] = $u_signup_name;
+      $_SESSION['ndaEmail'] = $u_signup_email;
+      ?>
+      <script>
+        window.open('/ideable/investor/nda.php', '_blank');
+      </script>
+      <?php
     } else {
       echo "<script>alert('Password and Confirm Password is not matched.')</script>";
     }

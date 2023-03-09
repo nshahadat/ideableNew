@@ -15,6 +15,10 @@ $username = $data['inventor_name'];
 $email = $data['inventor_email'];
 $pass = $data['inventor_pass'];
 $details = $data['inventor_details'];
+$useridlogin = $data['inventor_id'];
+
+$pass_sql = "SELECT * FROM askpass WHERE inventor_name = '$username'";
+$resultpass = mysqli_query($mysqli, $pass_sql) or die(mysqli_error($mysqli));
 ?>
 <div class="username-btn">
     <button>
@@ -63,7 +67,52 @@ $details = $data['inventor_details'];
             <input type="button" value="Edit Your Idea" class="inventor-prof-btn2">
         </div>
     </div>
+
+    <div class="prof-secondpart">
+        <h3 class="inventor-prof-header">Permission Request</h3>
+        <?php while ($datapass = mysqli_fetch_array($resultpass)) {
+            $post = $datapass['post_title'];
+            $postID = $datapass['post_id'];
+            $inv = $datapass['investor_name'];
+            $invid = $datapass['investor_id'];
+            ?>
+            <div class="prof-secondpart1">
+                <p class="inventor-profile">
+                    <?= $post ?> asked by
+                    <?= $inv ?>
+                </p>
+                <form action="#" method="post">
+                    <input type="submit" value="Give Permission" name="perbtn" class="inventor-prof-btn2">
+                </form>
+            </div>
+        <?php } ?>
+    </div>
 </div>
+
+<?php
+if (isset($_POST['perbtn'])) {
+    $postid = $postID;
+    $investor = $invid;
+    $inventor = $useridlogin;
+
+    $sharesql = "INSERT IGNORE INTO sharedpost (investor_id,inventor_id,post_id)
+    VALUES('$investor','$inventor','$postid')";
+    if ($mysqli->query($sharesql)) {
+        echo "okay";
+    } elseif (die($mysqli->error)) {
+        echo $mysqli->error;
+    }
+
+    $del = "DELETE FROM askpass WHERE post_id = '$postid' AND investor_id = '$investor'";
+    $mysqli->query($del) or die($mysqli->error);
+
+    echo "<script>
+    alert('You just gave permission for this post.');
+    window.location = '/ideable/inventor/inventor-profile.php';
+    </script>";
+
+}
+?>
 <?php
 include ADMIN . '/includes/footer.php';
 ?>

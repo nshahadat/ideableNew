@@ -21,7 +21,9 @@ $useremail = $data['inventor_email'];
 ?>
 
 <div class="username-btn"><button>
-        <?php echo $username; ?>
+        <a href="/ideable/inventor/inventor-profile.php" style="color:white;">
+            <?php echo $username; ?>
+        </a>
     </button></div>
 <a href="inventor-logout.php">
     <div class="logout-btn"><button>logout</button></div>

@@ -12,11 +12,15 @@ error_reporting(0);
     </div>
     <div class="nda-second-section">
         <div class="nda-date">
-            Date: <b>[Today’s Date]</b>
+            Date: <b>date("d/m/Y")</b>
         </div>
         <div class="nda-concern">
-            To whom it may concern: <b>[Your Name]</b>, an user and investor of the online platform called ideable whose
-            e-mail is <b>[Your Email]</b>
+            To whom it may concern: <b>
+                <?= $_SESSION['ndaName'] ?>
+            </b>, an user and investor of the online platform called ideable whose
+            e-mail is <b>
+                <?= $_SESSION['ndaEmail'] ?>
+            </b>
         </div>
         <span>and</span>
         <div class="nda-inventor">
@@ -29,11 +33,17 @@ error_reporting(0);
             purpose of investing.
         </div>
         <div class="nda-rules">
-            2. While registering on ideable, <i>[Your Name]</i> is giving his full consent that <i>[Your Name]</i> can
+            2. While registering on ideable, <i>
+                <?= $_SESSION['ndaName'] ?>
+            </i> is giving his full consent that <i>
+                <?= $_SESSION['ndaName'] ?>
+            </i> can
             search
             and view
             any post on ideable and if he wants, he can invest on the idea with proper caution and by the consent of the
-            inventor. But <i>[Your Name]</i> cannot use any information at any cost for his personal use or cannot use
+            inventor. But <i>
+                <?= $_SESSION['ndaName'] ?>
+            </i> cannot use any information at any cost for his personal use or cannot use
             or
             implement any idea by himself without the consent of the inventor.
         </div>

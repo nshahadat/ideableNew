@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2023 at 06:32 PM
+-- Generation Time: Mar 09, 2023 at 11:22 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -44,6 +44,22 @@ INSERT INTO `admin` (`id`, `username`, `admin_email`, `admin_pass`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `askpass`
+--
+
+CREATE TABLE `askpass` (
+  `askid` int(11) NOT NULL,
+  `investor_id` int(255) NOT NULL,
+  `investor_name` varchar(255) NOT NULL,
+  `inventor_id` int(11) NOT NULL,
+  `inventor_name` varchar(255) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `post_title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `comment`
 --
 
@@ -65,7 +81,8 @@ INSERT INTO `comment` (`comment_id`, `c_post_id`, `c_user_name`, `c_text`) VALUE
 (42, 37, 'Nayeem Mallick Haisb', 'Mind Blowing'),
 (43, 37, 'Nayeem Mallick Haisb', 'Fantastic!!!'),
 (44, 36, 'Borolocks', 'sjhxshsjhxjhsx'),
-(45, 2, 'Borolocks', 'jklsdjsd');
+(45, 2, 'Borolocks', 'jklsdjsd'),
+(46, 2, 'Borolocks', 'kjhg');
 
 -- --------------------------------------------------------
 
@@ -140,7 +157,11 @@ CREATE TABLE `investor` (
 INSERT INTO `investor` (`investor_id`, `investor_name`, `investor_email`, `investor_pass`, `otp`, `investor_details`, `investor_dp_dir`) VALUES
 (2, 'Borolocks', 'eng101@gmail.com', 'hack3d', '', '', ''),
 (3, 'Borolocks', 'nshahadat3@gmail.com', 'hack3d', '385943', '', ''),
-(8, 'Borolocks', 'hassanhasibul5@gmail.com', 'hack3d', '', '', '');
+(8, 'Borolocks', 'hassanhasibul5@gmail.com', 'hack3d', '', '', ''),
+(9, 'FIrst ideable inventor', 'jk@jk.com', 'lll', '', '', ''),
+(10, 'FIrst ideable inventorn', 'jk@jjk.com', 'lll', '', '', ''),
+(11, 'FIrst ideable inventornj', 'jk@jjjk.com', 'lll', '', '', ''),
+(12, 'FIrst ideable c', 'jk@jjkk.com', 'lll', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -183,19 +204,19 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`post_id`, `inventor_id`, `inventor_name`, `inventor_email`, `title`, `description`, `post_comments`, `category`, `doc_files_dir`, `media_files_dir`, `thumb_files_dir`, `speech_files_dir`, `type_of_investment`, `area_of_investment`, `planning`, `patent`, `theoratically_proven`, `practically_proven`, `demo`, `business_model`, `related_projects`, `approximate_time`, `likes`, `report`, `hide`, `timestamp`, `post_pass`) VALUES
-(2, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'test 01', 'test 01', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '1', '', '2023-02-28 18:05:02', ''),
-(3, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'test 02', 'test 02', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-02-28 18:05:11', ''),
-(4, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'test 03', 'test 03', '', 'Farming', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-02-28 18:05:17', ''),
-(5, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'test 04', 'test 04', '', 'Farming', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-02-28 18:05:24', ''),
-(7, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'test 05', 'test 05', '', 'Education', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-02-28 18:05:30', ''),
-(8, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'test 06', 'test 06', '', 'Media', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-02-28 18:05:37', ''),
-(9, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'a', 'a', '', 'Media', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'a', 'a', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'a', 0, '0', '', '2023-01-14 09:28:22', ''),
-(10, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'w', 'w', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'w', 'w', '', '', 'No', 'Yes', 'Yes', '', 'No', 'w', 0, '0', '', '2023-01-07 17:50:09', ''),
-(11, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'g', 'g', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'g', 'gg', '', '', 'Yes', 'No', 'Yes', '', 'Yes', 'g', 0, '0', '', '2023-01-07 17:50:14', ''),
-(12, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'q', 'q', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'q', 'q', '', '', 'No', 'Yes', 'Yes', '', 'Yes', 'q', 0, '0', '', '2023-01-07 17:50:21', ''),
-(13, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'z', 'z', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/3.jpg', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/4.jpg', 'z', 'z', '', '', 'Yes', 'No', 'Yes', '', 'Yes', 'z', 0, '0', '', '2023-01-07 17:50:25', ''),
-(14, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'x', 'x', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/3.jpg', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/4.jpg', 'x', 'x', '', '', 'Yes', 'Yes', 'No', '', 'Yes', 'x', 0, '0', '', '2023-01-07 17:50:29', ''),
-(28, 5, 'test_user_08', 'shahadatsaad23@gmail.com', 'Flying Car', 'A flying car or roadable aircraft is a type of vehicle which can function both as a personal car or automobile and as an aircraft. As used here, this includes vehicles which drive as motorcycles when on the road. The term \"flying car\" is also sometimes used to include hovercars.', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/demoFiles.docx', '/ideable/inventor/dbFiles/mediaFiles/demoVideo.mp4', '/ideable/inventor/dbFiles/thumbFiles/6.jpg', '/ideable/inventor/dbFiles/speechFiles/demoVideo.mp4', 'Money & Instruments', 'Flying Technology', '', '', 'Yes', 'No', 'Yes', '', 'No', '5 Years', 0, '2', '', '2023-01-15 14:30:31', ''),
+(2, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'test 01', 'test 01', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '1', '', '2023-03-09 09:29:18', ''),
+(3, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'test 02', 'test 02', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-03-09 09:29:23', ''),
+(4, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'test 03', 'test 03', '', 'Farming', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-03-09 09:29:27', ''),
+(5, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'test 04', 'test 04', '', 'Farming', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-03-09 09:29:30', ''),
+(7, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'test 05', 'test 05', '', 'Education', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-03-09 09:29:34', ''),
+(8, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'test 06', 'test 06', '', 'Media', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'none', 'none', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'infinite', 0, '0', '', '2023-03-09 09:29:37', ''),
+(9, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'a', 'a', '', 'Media', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'a', 'a', '', '', 'Yes', 'Yes', 'Yes', '', 'Yes', 'a', 0, '0', '', '2023-03-09 09:29:49', ''),
+(10, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'w', 'w', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'w', 'w', '', '', 'No', 'Yes', 'Yes', '', 'No', 'w', 0, '0', '', '2023-03-09 09:29:53', ''),
+(11, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'g', 'g', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'g', 'gg', '', '', 'Yes', 'No', 'Yes', '', 'Yes', 'g', 0, '0', '', '2023-03-09 09:29:56', ''),
+(12, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'q', 'q', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/', 'q', 'q', '', '', 'No', 'Yes', 'Yes', '', 'Yes', 'q', 0, '0', '', '2023-03-09 09:30:00', ''),
+(13, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'z', 'z', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/3.jpg', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/4.jpg', 'z', 'z', '', '', 'Yes', 'No', 'Yes', '', 'Yes', 'z', 0, '0', '', '2023-03-09 09:30:04', ''),
+(14, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'x', 'x', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/3.jpg', '/ideable/inventor/dbFiles/mediaFiles/', '/ideable/inventor/dbFiles/thumbFiles/demo-title-picture.jpg', '/ideable/inventor/dbFiles/speechFiles/4.jpg', 'x', 'x', '', '', 'Yes', 'Yes', 'No', '', 'Yes', 'x', 0, '0', '', '2023-03-09 09:30:08', ''),
+(28, 5, 'Inventor', 'shahadatsaad23@gmail.com', 'Flying Car', 'A flying car or roadable aircraft is a type of vehicle which can function both as a personal car or automobile and as an aircraft. As used here, this includes vehicles which drive as motorcycles when on the road. The term \"flying car\" is also sometimes used to include hovercars.', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/demoFiles.docx', '/ideable/inventor/dbFiles/mediaFiles/demoVideo.mp4', '/ideable/inventor/dbFiles/thumbFiles/6.jpg', '/ideable/inventor/dbFiles/speechFiles/demoVideo.mp4', 'Money & Instruments', 'Flying Technology', '', '', 'Yes', 'No', 'Yes', '', 'No', '5 Years', 0, '2', '', '2023-03-09 09:30:14', ''),
 (36, 3, 'First ideable inventor', 'ideabletest@gmail.com', 'Napa Tablet', 'Napa is a medicine used to relieve pain and to reduce fever. It is used to treat many conditions such as headache, body ache, toothache and common cold. Napa may be prescribed alone or in combination with another medicine. You should take it regularly as advised by your doctor. It is usually best taken with food otherwise it may upset your stomach. Do not take more or use it for longer than recommended. Side effects are rare if this medicine is used correctly but this medicine may cause stomach pain, nausea, and vomiting in some people. Consult your doctor if any of these side effects bother you or do not go away. This medicine is widely prescribed and considered safe but is not suitable for everybody. Before taking it, let your doctor know if you have liver or kidney problems or are using blood-thinning medicines.', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/dan-dennis-IcAKvvms4ug-unsplash.jpg', '/ideable/inventor/dbFiles/mediaFiles/demoVideo.mp4', '/ideable/inventor/dbFiles/thumbFiles/dan-dennis-IcAKvvms4ug-unsplash.jpg', '/ideable/inventor/dbFiles/speechFiles/demoVideo.mp4', 'Marketing', 'Brand Promotion', '', '', 'Yes', 'No', 'No', '', 'Yes', '2 years', 0, '', '', '2023-01-15 22:25:07', ''),
 (37, 6, 'Shahadat Arnob Safran', 'arnobm97@gmail.com', 'lorem', 'Lorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem LoremLorem Lorem Lorem Lorem', '', 'Technology', '/ideable/inventor/dbFiles/docFiles/kkk.png', '/ideable/inventor/dbFiles/mediaFiles/demoVideo.mp4', '/ideable/inventor/dbFiles/thumbFiles/kkk.png', '/ideable/inventor/dbFiles/speechFiles/demoVideo.mp4', 'lorem', 'lorem', '', 'No', 'Yes', 'No', 'Yes', '', 'Yes', 'lorem', 0, '', '', '2023-01-16 20:23:36', '');
 
@@ -225,6 +246,13 @@ CREATE TABLE `sharedpost` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `sharedpost`
+--
+
+INSERT INTO `sharedpost` (`sharedID`, `investor_id`, `inventor_id`, `post_id`) VALUES
+(7, 3, 5, 2);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -233,6 +261,12 @@ CREATE TABLE `sharedpost` (
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `askpass`
+--
+ALTER TABLE `askpass`
+  ADD PRIMARY KEY (`askid`);
 
 --
 -- Indexes for table `comment`
@@ -295,10 +329,16 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `askpass`
+--
+ALTER TABLE `askpass`
+  MODIFY `askid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `inventor`
@@ -316,7 +356,7 @@ ALTER TABLE `investment`
 -- AUTO_INCREMENT for table `investor`
 --
 ALTER TABLE `investor`
-  MODIFY `investor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `investor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `post`
@@ -334,7 +374,7 @@ ALTER TABLE `review`
 -- AUTO_INCREMENT for table `sharedpost`
 --
 ALTER TABLE `sharedpost`
-  MODIFY `sharedID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sharedID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
