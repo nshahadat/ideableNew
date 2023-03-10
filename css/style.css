@@ -1866,6 +1866,15 @@ td button {
     padding: 10px;
     padding-left: 100px;
 }
+.gallery-main-container {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
 .ask-pass-btn {
     font-family: "Inter", sans-serif;
     width: 80px;
@@ -2154,7 +2163,7 @@ td button {
     .gal-container {
         cursor: pointer;
         margin-top: 100px;
-        /* flex-basis: 33.333333%; */
+        flex-basis: 33.333333%;
         display: flex;
         justify-content: center;
         align-items: center;
