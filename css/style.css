@@ -1458,10 +1458,29 @@ input.invalid {
     border-radius: 50%;
 }
 /* expertise css  */
-.expert-submit {
-    font-family: "Noto Sans JP", sans-serif;
+.card__image1{
+    height: 75%;
+}
+.card__image2{
+    height: 65%;
+}
+
+.card__image4{
+    height: 55%;
+}
+.card__image6{
+    height: 65%;
+}
+.card__image5{
+    height: 85%;
+}
+.card__image8{
+    height: 50%;
+}
+.expert-submit{
+    font-family: 'Noto Sans JP', sans-serif;
     width: 80px;
-    color: #6a515e;
+    color: #6A515E;
     font-weight: 600;
     border: none;
     outline: none;
@@ -1472,9 +1491,10 @@ input.invalid {
     background-color: whitesmoke;
     margin-top: 20px;
     margin-left: 140px;
+
 }
 :root {
-    --surface-color: whitesmoke;
+    --surface-color:whitesmoke;
     --curve: 40;
 }
 .card-container {
@@ -1588,12 +1608,12 @@ input.invalid {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-}
-.card-header {
+  }    
+.card-header{
     text-align: center;
-    margin-top: 100px;
-    font-size: 40px;
-    color: #6a515e;
+   margin-top: 100px;
+   font-size: 40px;
+   color:#6A515E;
 }
 /* edit-prof-form css */
 .edit-pro-container {
@@ -1847,6 +1867,26 @@ td button {
     padding: 10px;
     padding-left: 100px;
 }
+.ask-pass-btn{
+    font-family: "Inter", sans-serif;
+    width: 80px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    height: 39px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #2b6777;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.ask-pass-btn:hover {
+    background-color: #52ab98;
+    color: white;
+}
 /* index  page card css */
 .index-container {
     display: flex;
@@ -2068,6 +2108,7 @@ td button {
         background-color: #2b6777;
         position: relative;
         margin-left: 20px;
+        
     }
     .review-btn {
         font-family: "Inter", sans-serif;

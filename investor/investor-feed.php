@@ -53,7 +53,7 @@ $post_fetch_result = $mysqli->query($post_fetch_sql);
                     <p class="gallery-desc">
                         <?php echo $post_fetch_des; ?>
                     <form action="#" method="post">
-                        <input type="submit" value="Ask" name="ask-pass-btn">
+                        <input type="submit" value="Ask" name="ask-pass-btn" class="ask-pass-btn">
                         <input type="hidden" name="post-id" value="<?= $post_fetch_id ?>">
                         <input type="hidden" name="post-title" value="<?= $post_fetch_title ?>">
                         <input type="hidden" name="post-user-name" value="<?= $post_fetch_username ?>">
