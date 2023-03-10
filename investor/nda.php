@@ -13,7 +13,7 @@ error_reporting(0);
     <div class="nda-second-section">
         <div class="nda-date">
             Date: <b>
-                <?php echo date("d/mg/Y") ?>
+                <?php echo date("d/m/Y") ?>
             </b>
         </div>
         <div class="nda-concern">
