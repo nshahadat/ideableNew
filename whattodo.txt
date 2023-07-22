@@ -1,0 +1,13 @@
+|For Arnob|
+# Discord e images a nda sample dewa achhe and files e nda ideable er jonno dewa achhe. nda.php file e sample er moto design e shob likha boshabi and boshanor time e `Ctrl+P` type kore pdf e dekhe nibi thik moto shob dekhay kina. because eta pdf akare print er option dite hobe. 
+# Post upload er oikhane arekta field add korbi `post password`.
+# Inventor profile e idea er pashe edit idea jei button oitar pashe `post password likhe dibi jeikhane post er password ta dekhabo`.
+# inventor-share-password.php file e ekta table dibi jeikhane post name, interested investor, share password 3 ta option thakbe. 
+# inventor-feed e `whats on your mind` er niche `Share Password` link dibi jeta inventor-share-password.php file e niye jabe.
+# ask-password.php te likha thakbe "You do not have permission from the inventor to see the idea yet. Ask the inventor to share password with you to continue." Niche 2 ta btn thakbe `Ask for password`, `Dont ask and go back`
+
+
+|For Shahadat|
+# investor ask pass e click korle db te new entry hobe, pass field empty thakbe.
+# inventor share pass e click korle same entry update hobe and password input hoye jabe.
+# investor kono idea te click korle ajax diye backend e check hobe je shared pass table e info achhe kina, jodi thake tahole singlepost e jabe nahole ask password e jabe. 
